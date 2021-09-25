@@ -1,0 +1,95 @@
+#modal-upload-box {
+  width: 400px;
+  height: 450px;
+  background-color: rgb(45,45,45);
+  border: 1px solid rgb(80,80,80);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-upload-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#modal-upload-label {
+  color: white;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+#modal-upload-close {
+  position: absolute;
+  left: 274px;
+  bottom: 12px;
+  font-size: 24px;
+  color: white;
+  user-select: none;
+}
+
+#modal-upload-content-box {
+  width: 85%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-upload-content-textarea {
+  width: 90%;
+  height: 100%;
+  resize: none;
+  overflow: auto;
+  background-color: rgb(55,55,55);
+  color: white;
+  border: 1px solid rgb(70,70,70);
+  border-right: 0;
+}
+
+#modal-upload-content-textarea:focus {
+  outline: none;
+}
+
+#modal-upload-button-panel {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-upload-button {
+  height: 40px;
+  width: 120px;
+  background-color: #282828;
+  color: white;
+  border: 1px solid #444444;
+  box-sizing: border-box;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 13px "Arial";
+}
+
+#modal-upload-input {
+  display: none;
+}
+
+.modal-upload-button:hover {
+  background-color: rgb(120,120,120);
+}
+
+#modal-upload-json-error {
+  min-height: 15px;
+  color: red;
+  background-color: inherit;
+  font: 12px "Arial";
+  line-height: 0px;
+}

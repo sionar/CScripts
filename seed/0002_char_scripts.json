@@ -1,0 +1,3758 @@
+[
+{
+    "model": "char_scripts.script",
+    "pk": 1,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.048Z",
+        "updated_at": "2021-09-15T00:24:11.048Z",
+        "owner": 2,
+        "title": "Trouble Brewing",
+        "description": "Base script for Blood on the Clocktower.",
+        "author": "Blood on the Clocktower",
+        "script_type": "Normal",
+        "visible": true
+    }
+},
+{
+    "model": "char_scripts.script",
+    "pk": 2,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.259Z",
+        "updated_at": "2021-09-15T00:43:19.260Z",
+        "owner": 2,
+        "title": "Bad Moon Rising",
+        "description": "Base script for Blood on the Clocktower.",
+        "author": "Blood on the Clocktower",
+        "script_type": "Normal",
+        "visible": true
+    }
+},
+{
+    "model": "char_scripts.script",
+    "pk": 3,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.789Z",
+        "updated_at": "2021-09-15T00:49:35.789Z",
+        "owner": 2,
+        "title": "Sects & Violets",
+        "description": "Base script for Blood on the Clocktower.",
+        "author": "Blood on the Clocktower",
+        "script_type": "Normal",
+        "visible": true
+    }
+},
+{
+    "model": "char_scripts.version",
+    "pk": 1,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.122Z",
+        "updated_at": "2021-09-15T00:24:11.122Z",
+        "script": 1,
+        "version_num": 1
+    }
+},
+{
+    "model": "char_scripts.version",
+    "pk": 2,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.346Z",
+        "updated_at": "2021-09-15T00:43:19.346Z",
+        "script": 2,
+        "version_num": 1
+    }
+},
+{
+    "model": "char_scripts.version",
+    "pk": 3,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.866Z",
+        "updated_at": "2021-09-15T00:49:35.866Z",
+        "script": 3,
+        "version_num": 1
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 1,
+    "fields": {
+        "created_at": "2021-08-30T19:34:10.743Z",
+        "updated_at": "2021-09-22T02:50:52.143Z",
+        "owner": 2,
+        "name": "Washerwoman",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing that 1 of 2 players",
+        "desc2": "is a particular Townsfolk.",
+        "desc3": "",
+        "night_first_desc": "Show the character token of a Townsfolk in play. Point to two players, one of which is that character.",
+        "night_other_desc": "",
+        "night_first_order": "30.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Washerwoman_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 2,
+    "fields": {
+        "created_at": "2021-08-30T20:03:57.134Z",
+        "updated_at": "2021-09-22T02:51:01.476Z",
+        "owner": 2,
+        "name": "Librarian",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing that 1 of 2 players",
+        "desc2": "is a particular Outsider. (Or that zero are in play.)",
+        "desc3": "",
+        "night_first_desc": "Show the character token of an Outsider in play. Point to two players, one of which is that character.",
+        "night_other_desc": "",
+        "night_first_order": "31.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Librarian_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 3,
+    "fields": {
+        "created_at": "2021-08-30T20:04:40.562Z",
+        "updated_at": "2021-09-22T02:51:10.181Z",
+        "owner": 2,
+        "name": "Investigator",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing that 1 of 2 players",
+        "desc2": "is a particular Minion.",
+        "desc3": "",
+        "night_first_desc": "Show the character token of a Minion in play. Point to two players, one of which is that character.",
+        "night_other_desc": "",
+        "night_first_order": "32.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Investigator_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 4,
+    "fields": {
+        "created_at": "2021-08-30T20:07:14.347Z",
+        "updated_at": "2021-09-22T02:51:16.528Z",
+        "owner": 2,
+        "name": "Chef",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing how many pairs",
+        "desc2": "of evil players there are.",
+        "desc3": "",
+        "night_first_desc": "Show the finger signal (0, 1, 2, ...) for the number of pairs of neighbouring evil players.",
+        "night_other_desc": "",
+        "night_first_order": "33.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Chef_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 5,
+    "fields": {
+        "created_at": "2021-08-30T20:08:38.106Z",
+        "updated_at": "2021-09-22T03:14:14.525Z",
+        "owner": 2,
+        "name": "Empath",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, you learn how many",
+        "desc2": "of your 2 alive neighbors are evil.",
+        "desc3": "",
+        "night_first_desc": "Show the finger signal (0, 1, 2) for the number of evil alive neighbours of the Empath.",
+        "night_other_desc": "Show the finger signal (0, 1, 2) for the number of evil alive neighbours of the Empath.",
+        "night_first_order": "34.00",
+        "night_other_order": "52.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Empath_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 6,
+    "fields": {
+        "created_at": "2021-08-30T20:11:21.269Z",
+        "updated_at": "2021-09-22T03:14:22.927Z",
+        "owner": 2,
+        "name": "Fortune Teller",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, choose 2 players: you learn if either is a Demon.",
+        "desc2": "There is 1 good player that registers as a Demon to you.",
+        "desc3": "",
+        "night_first_desc": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon.",
+        "night_other_desc": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon.",
+        "night_first_order": "35.00",
+        "night_other_order": "53.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Fortune_Teller_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 7,
+    "fields": {
+        "created_at": "2021-08-30T20:12:45.866Z",
+        "updated_at": "2021-09-22T03:14:38.483Z",
+        "owner": 2,
+        "name": "Undertaker",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, you learn which character",
+        "desc2": "died by execution today.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If a player was executed today: Show that player's character token.",
+        "night_first_order": "0.00",
+        "night_other_order": "55.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Undertaker_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 8,
+    "fields": {
+        "created_at": "2021-08-30T20:13:30.693Z",
+        "updated_at": "2021-09-22T03:06:06.448Z",
+        "owner": 2,
+        "name": "Monk",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, choose a player (not yourself):",
+        "desc2": "they are safe from the Demon tonight.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The previously protected player is no longer protected. The Monk points to a player not themselves. Mark that player 'Protected'.",
+        "night_first_order": "0.00",
+        "night_other_order": "12.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Monk_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 9,
+    "fields": {
+        "created_at": "2021-08-30T20:15:11.431Z",
+        "updated_at": "2021-09-22T03:11:54.342Z",
+        "owner": 2,
+        "name": "Ravenkeeper",
+        "char_type": "Townsfolk",
+        "desc1": "If you die at night, you are woken to choose a player:",
+        "desc2": "you learn their character.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player's character token.",
+        "night_first_order": "0.00",
+        "night_other_order": "41.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Ravenkeeper_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 10,
+    "fields": {
+        "created_at": "2021-08-30T20:16:20.190Z",
+        "updated_at": "2021-08-30T20:16:20.190Z",
+        "owner": 2,
+        "name": "Virgin",
+        "char_type": "Townsfolk",
+        "desc1": "The 1st time you are nominated, if the nominator",
+        "desc2": "is a Townsfolk, they are executed immediately.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Virgin_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 11,
+    "fields": {
+        "created_at": "2021-08-30T20:17:16.102Z",
+        "updated_at": "2021-09-08T01:57:48.577Z",
+        "owner": 2,
+        "name": "Slayer",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, during the day, publicly choose a player:",
+        "desc2": "if they are the Demon, they die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Slayer_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 12,
+    "fields": {
+        "created_at": "2021-08-30T20:18:37.656Z",
+        "updated_at": "2021-08-30T20:18:37.656Z",
+        "owner": 2,
+        "name": "Soldier",
+        "char_type": "Townsfolk",
+        "desc1": "You are safe",
+        "desc2": "from the Demon.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Soldier_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 13,
+    "fields": {
+        "created_at": "2021-08-30T20:22:23.620Z",
+        "updated_at": "2021-08-30T20:22:23.620Z",
+        "owner": 2,
+        "name": "Mayor",
+        "char_type": "Townsfolk",
+        "desc1": "If only 3 players live & no execution occurs, your team",
+        "desc2": "wins. If you die at night, another player might die instead.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Mayor_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 14,
+    "fields": {
+        "created_at": "2021-08-30T20:22:56.626Z",
+        "updated_at": "2021-09-22T03:14:30.326Z",
+        "owner": 2,
+        "name": "Butler",
+        "char_type": "Outsider",
+        "desc1": "Each night, choose a player (not yourself):",
+        "desc2": "tomorrow, you may only vote if they are voting too.",
+        "desc3": "",
+        "night_first_desc": "The Butler points to a player. Mark that player as 'Master'.",
+        "night_other_desc": "The Butler points to a player. Mark that player as 'Master'.",
+        "night_first_order": "36.00",
+        "night_other_order": "54.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Butler_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 15,
+    "fields": {
+        "created_at": "2021-08-30T20:25:14.799Z",
+        "updated_at": "2021-08-30T20:25:14.799Z",
+        "owner": 2,
+        "name": "Drunk",
+        "char_type": "Outsider",
+        "desc1": "You do not know you are the Drunk.",
+        "desc2": "You think you are a Townsfolk character, but you are not.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Drunk_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 16,
+    "fields": {
+        "created_at": "2021-08-30T20:26:11.852Z",
+        "updated_at": "2021-08-30T20:26:11.852Z",
+        "owner": 2,
+        "name": "Recluse",
+        "char_type": "Outsider",
+        "desc1": "You might register as evil & as a Minion or Demon,",
+        "desc2": "even if dead.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Recluse_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 17,
+    "fields": {
+        "created_at": "2021-08-30T20:26:56.518Z",
+        "updated_at": "2021-08-30T20:26:56.518Z",
+        "owner": 2,
+        "name": "Saint",
+        "char_type": "Outsider",
+        "desc1": "If you die by execution,",
+        "desc2": "your team loses.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Saint_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 18,
+    "fields": {
+        "created_at": "2021-08-30T20:28:00.228Z",
+        "updated_at": "2021-09-22T03:04:59.621Z",
+        "owner": 2,
+        "name": "Poisoner",
+        "char_type": "Minion",
+        "desc1": "Each night, choose a player:",
+        "desc2": "they are poisoned tonight and tomorrow day.",
+        "desc3": "",
+        "night_first_desc": "The Poisoner points to a player. That player is poisoned.",
+        "night_other_desc": "The previously poisoned player is no longer poisoned. The Poisoner points to a player. That player is poisoned.",
+        "night_first_order": "15.00",
+        "night_other_order": "7.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Poisoner_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 19,
+    "fields": {
+        "created_at": "2021-08-30T20:28:56.623Z",
+        "updated_at": "2021-09-22T03:16:52.484Z",
+        "owner": 2,
+        "name": "Spy",
+        "char_type": "Minion",
+        "desc1": "Each night, you see the Grimoire. You might register",
+        "desc2": "as good & as a Townsfolk or Outsider, even if dead.",
+        "desc3": "",
+        "night_first_desc": "Show the Grimoire to the Spy for as long as they need.",
+        "night_other_desc": "Show the Grimoire to the Spy for as long as they need.",
+        "night_first_order": "45.00",
+        "night_other_order": "66.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Spy_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 20,
+    "fields": {
+        "created_at": "2021-08-30T20:29:51.386Z",
+        "updated_at": "2021-08-30T20:29:51.386Z",
+        "owner": 2,
+        "name": "Baron",
+        "char_type": "Minion",
+        "desc1": "There are extra Outsiders in play.",
+        "desc2": "[+2 Outsiders]",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Baron_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 21,
+    "fields": {
+        "created_at": "2021-08-30T20:30:53.157Z",
+        "updated_at": "2021-09-22T03:07:13.356Z",
+        "owner": 2,
+        "name": "Scarlet Woman",
+        "char_type": "Minion",
+        "desc1": "If there are 5 or more players alive & the Demon dies,",
+        "desc2": "you become the Demon. (Travellers don't count)",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Scarlet Woman became the Demon today: Show the 'You are' card, then the demon token.",
+        "night_first_order": "0.00",
+        "night_other_order": "19.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Scarlet_Woman_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 22,
+    "fields": {
+        "created_at": "2021-08-30T20:33:01.811Z",
+        "updated_at": "2021-09-22T03:08:56.431Z",
+        "owner": 2,
+        "name": "Imp",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose a player: they die.",
+        "desc2": "If you kill yourself this way, a Minion becomes the Imp.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The Imp points to a player. That player dies. If the Imp chose themselves: Replace the character of 1 alive minion with a spare Imp token. Show the 'You are' card, then the Imp token.",
+        "night_first_order": "0.00",
+        "night_other_order": "23.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Imp_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 23,
+    "fields": {
+        "created_at": "2021-09-08T19:59:48.668Z",
+        "updated_at": "2021-09-22T02:52:13.013Z",
+        "owner": 2,
+        "name": "Clockmaker",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing how many steps",
+        "desc2": "from the Demon to its nearest Minion.",
+        "desc3": "",
+        "night_first_desc": "Show the hand signal for the number (1, 2, 3, etc.) of places from Demon to closest Minion.",
+        "night_other_desc": "",
+        "night_first_order": "38.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Clockmaker_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 24,
+    "fields": {
+        "created_at": "2021-09-08T20:32:52.768Z",
+        "updated_at": "2021-09-22T22:46:43.333Z",
+        "owner": 2,
+        "name": "Dreamer",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, choose a player (not yourself, not Travellers):",
+        "desc2": "you learn 1 good character & 1 evil character, 1 of which is correct.",
+        "desc3": "",
+        "night_first_desc": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
+        "night_other_desc": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
+        "night_first_order": "39.00",
+        "night_other_order": "56.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Dreamer_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 25,
+    "fields": {
+        "created_at": "2021-09-08T20:33:58.752Z",
+        "updated_at": "2021-09-22T03:05:58.773Z",
+        "owner": 2,
+        "name": "Snake Charmer",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, choose an alive player: a chosen Demon swaps",
+        "desc2": "characters & alignments with you & is then poisoned.",
+        "desc3": "",
+        "night_first_desc": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
+        "night_other_desc": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
+        "night_first_order": "18.00",
+        "night_other_order": "11.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Snake_Charmer_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 26,
+    "fields": {
+        "created_at": "2021-09-08T20:34:45.957Z",
+        "updated_at": "2021-09-22T03:17:33.491Z",
+        "owner": 2,
+        "name": "Mathematician",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, you learn how many players' abilities worked",
+        "desc2": "abnormally (since dawn) due to another character's ability.",
+        "desc3": "",
+        "night_first_desc": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
+        "night_other_desc": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
+        "night_first_order": "48.00",
+        "night_other_order": "69.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Mathematician_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 27,
+    "fields": {
+        "created_at": "2021-09-08T20:35:20.304Z",
+        "updated_at": "2021-09-22T03:14:51.596Z",
+        "owner": 2,
+        "name": "Flowergirl",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, you learn",
+        "desc2": "if a Demon voted today.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "Nod 'yes' or shake head 'no' for whether the Demon voted today. Place the 'Demon not voted' marker (remove 'Demon voted', if any).",
+        "night_first_order": "0.00",
+        "night_other_order": "57.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Flowergirl_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 28,
+    "fields": {
+        "created_at": "2021-09-08T20:36:20.472Z",
+        "updated_at": "2021-09-22T03:15:05.417Z",
+        "owner": 2,
+        "name": "Town Crier",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, you learn",
+        "desc2": "if a Minion nominated today.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "Nod 'yes' or shake head 'no' for whether a Minion nominated today. Place the 'Minion not nominated' marker (remove 'Minion nominated', if any).",
+        "night_first_order": "0.00",
+        "night_other_order": "58.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Town_Crier_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 29,
+    "fields": {
+        "created_at": "2021-09-08T20:37:20.624Z",
+        "updated_at": "2021-09-22T03:15:13.405Z",
+        "owner": 2,
+        "name": "Oracle",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, you learn",
+        "desc2": "how many dead players are evil.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "Each night*, you learn how many dead players are evil.",
+        "night_first_order": "0.00",
+        "night_other_order": "59.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Oracle_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 30,
+    "fields": {
+        "created_at": "2021-09-08T20:45:36.884Z",
+        "updated_at": "2021-09-08T20:45:36.884Z",
+        "owner": 2,
+        "name": "Savant",
+        "char_type": "Townsfolk",
+        "desc1": "Each day, you may visit the Storyteller to learn 2 things",
+        "desc2": "in private: 1 is true & 1 is false.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Savant_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 31,
+    "fields": {
+        "created_at": "2021-09-08T20:46:15.828Z",
+        "updated_at": "2021-09-22T03:15:20.777Z",
+        "owner": 2,
+        "name": "Seamstress",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, at night, choose 2 players (not yourself):",
+        "desc2": "you learn if they are the same alignment.",
+        "desc3": "",
+        "night_first_desc": "The Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
+        "night_other_desc": "If the Seamstress has not yet used their ability: the Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
+        "night_first_order": "40.00",
+        "night_other_order": "60.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Seamstress_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 32,
+    "fields": {
+        "created_at": "2021-09-08T20:47:01.847Z",
+        "updated_at": "2021-09-22T03:03:20.763Z",
+        "owner": 2,
+        "name": "Philosopher",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, at night, choose a good character:",
+        "desc2": "gain that ability. If this character is in play, they are drunk.",
+        "desc3": "",
+        "night_first_desc": "The Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
+        "night_other_desc": "If the Philosopher has not used their ability: the Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
+        "night_first_order": "2.00",
+        "night_other_order": "2.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Philosopher_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 33,
+    "fields": {
+        "created_at": "2021-09-08T20:47:36.006Z",
+        "updated_at": "2021-09-08T20:47:36.006Z",
+        "owner": 2,
+        "name": "Artist",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, during the day,",
+        "desc2": "privately ask the Storyteller any yes/no question.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Artist_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 34,
+    "fields": {
+        "created_at": "2021-09-08T20:48:30.381Z",
+        "updated_at": "2021-09-22T03:15:29.173Z",
+        "owner": 2,
+        "name": "Juggler",
+        "char_type": "Townsfolk",
+        "desc1": "On your 1st day, publicly guess up to 5 player's characters.",
+        "desc2": "That night, you learn how many you got correct.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If today was the Juggler's first day: Show the hand signal for the number (0, 1, 2, etc.) of 'Correct' markers. Remove markers.",
+        "night_first_order": "0.00",
+        "night_other_order": "61.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Juggler_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 35,
+    "fields": {
+        "created_at": "2021-09-08T20:49:10.051Z",
+        "updated_at": "2021-09-22T03:12:11.912Z",
+        "owner": 2,
+        "name": "Sage",
+        "char_type": "Townsfolk",
+        "desc1": "If the Demon kills you,",
+        "desc2": "you learn that it is 1 of 2 players.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Sage was killed by a Demon: Point to two players, one of which is that Demon.",
+        "night_first_order": "0.00",
+        "night_other_order": "42.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Sage_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 36,
+    "fields": {
+        "created_at": "2021-09-08T20:49:38.254Z",
+        "updated_at": "2021-09-08T20:49:38.254Z",
+        "owner": 2,
+        "name": "Mutant",
+        "char_type": "Outsider",
+        "desc1": "If you are \"mad\" about being an Outsider,",
+        "desc2": "you might be executed.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Mutant_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 37,
+    "fields": {
+        "created_at": "2021-09-08T20:50:52.818Z",
+        "updated_at": "2021-09-22T03:11:35.253Z",
+        "owner": 2,
+        "name": "Barber",
+        "char_type": "Outsider",
+        "desc1": "If you died today or tonight, the Demon may choose",
+        "desc2": "2 players (not another Demon) to swap characters.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Barber died today: Wake the Demon. Show the 'This character selected you' card, then Barber token. The Demon either shows a 'no' head signal, or points to 2 players. If they chose players: Swap the character tokens. Wake each player. Show 'You are', then their new character token.",
+        "night_first_order": "0.00",
+        "night_other_order": "39.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Barber_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 38,
+    "fields": {
+        "created_at": "2021-09-08T20:50:12.515Z",
+        "updated_at": "2021-09-22T03:11:42.521Z",
+        "owner": 2,
+        "name": "Sweetheart",
+        "char_type": "Outsider",
+        "desc1": "When you die,",
+        "desc2": "1 player is drunk from now on.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "When you die, 1 player is drunk from now on.",
+        "night_first_order": "0.00",
+        "night_other_order": "40.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Sweetheart_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 39,
+    "fields": {
+        "created_at": "2021-09-08T20:51:32.385Z",
+        "updated_at": "2021-09-08T20:51:32.385Z",
+        "owner": 2,
+        "name": "Klutz",
+        "char_type": "Outsider",
+        "desc1": "When you learn that you died, publicly choose",
+        "desc2": "1 alive player: if they are evil, your team loses.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Klutz_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 40,
+    "fields": {
+        "created_at": "2021-09-08T20:53:06.657Z",
+        "updated_at": "2021-09-22T03:06:25.597Z",
+        "owner": 2,
+        "name": "Witch",
+        "char_type": "Minion",
+        "desc1": "Each night, choose a player:",
+        "desc2": "if they nominate tomorrow, they die.",
+        "desc3": "If just 3 players live, you lose this ability.",
+        "night_first_desc": "The Witch points to a player. If that player nominates tomorrow they die immediately.",
+        "night_other_desc": "The Witch points to a player. If that player nominates tomorrow they die immediately.",
+        "night_first_order": "22.00",
+        "night_other_order": "14.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Witch_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 41,
+    "fields": {
+        "created_at": "2021-09-08T20:54:07.598Z",
+        "updated_at": "2021-09-22T03:06:32.355Z",
+        "owner": 2,
+        "name": "Cerenovus",
+        "char_type": "Minion",
+        "desc1": "Each night, choose a player & a good character:",
+        "desc2": "they are \"mad\" they are this character tomorrow,",
+        "desc3": "or might be executed.",
+        "night_first_desc": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
+        "night_other_desc": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
+        "night_first_order": "23.00",
+        "night_other_order": "15.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Cerenovus_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 42,
+    "fields": {
+        "created_at": "2021-09-08T20:55:05.344Z",
+        "updated_at": "2021-09-22T03:06:40.964Z",
+        "owner": 2,
+        "name": "Pit-Hag",
+        "char_type": "Minion",
+        "desc1": "Each night*, choose a player & a character they",
+        "desc2": "become (if not-in-play). If a Demon is made,",
+        "desc3": "deaths tonight are arbitrary.",
+        "night_first_desc": "",
+        "night_other_desc": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
+        "night_first_order": "0.00",
+        "night_other_order": "16.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Pit_Hag_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 43,
+    "fields": {
+        "created_at": "2021-09-08T20:55:58.793Z",
+        "updated_at": "2021-09-22T02:48:51.025Z",
+        "owner": 2,
+        "name": "Evil Twin",
+        "char_type": "Minion",
+        "desc1": "You & an opposing player know each other.",
+        "desc2": "If the good player is executed, evil wins.",
+        "desc3": "Good can't win if you both live.",
+        "night_first_desc": "Wake the Evil Twin and their twin. Confirm that they have acknowledged each other. Point to the Evil Twin. Show their Evil Twin token to the twin player. Point to the twin. Show their character token to the Evil Twin player.",
+        "night_other_desc": "",
+        "night_first_order": "21.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Evil_Twin_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 44,
+    "fields": {
+        "created_at": "2021-09-08T20:56:47.476Z",
+        "updated_at": "2021-09-22T03:09:52.751Z",
+        "owner": 2,
+        "name": "Fang Gu",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose a player: they die. The 1st Outsider",
+        "desc2": "this kills becomes an evil Fang Gu & you die instead.",
+        "desc3": "[+1 Outsider]",
+        "night_first_desc": "",
+        "night_other_desc": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
+        "night_first_order": "0.00",
+        "night_other_order": "28.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Fang_Gu_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 45,
+    "fields": {
+        "created_at": "2021-09-08T20:58:09.881Z",
+        "updated_at": "2021-09-22T03:10:01.666Z",
+        "owner": 2,
+        "name": "No Dashii",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose a player: they die.",
+        "desc2": "Your 2 Townsfolk neighbors are poisoned.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The No Dashii points to a player. That player dies.",
+        "night_first_order": "0.00",
+        "night_other_order": "29.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/No_Dashii_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 46,
+    "fields": {
+        "created_at": "2021-09-08T20:58:50.863Z",
+        "updated_at": "2021-09-22T03:10:22.346Z",
+        "owner": 2,
+        "name": "Vigormortis",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose a player: they die. Minions you kill",
+        "desc2": "keep their ability & poison 1 Townsfolk neighbor.",
+        "desc3": "[-1 Outsider]",
+        "night_first_desc": "",
+        "night_other_desc": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
+        "night_first_order": "0.00",
+        "night_other_order": "31.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Vigormortis_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 47,
+    "fields": {
+        "created_at": "2021-09-08T20:59:48.173Z",
+        "updated_at": "2021-09-22T03:10:10.361Z",
+        "owner": 2,
+        "name": "Vortox",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose a player; they die. Townsfolk abilities",
+        "desc2": "yield false info. Each day, if no-one is executed, evil wins.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The Vortox points to a player. That player dies.",
+        "night_first_order": "0.00",
+        "night_other_order": "30.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Vortox_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 48,
+    "fields": {
+        "created_at": "2021-09-08T22:08:26.412Z",
+        "updated_at": "2021-09-22T03:13:44.378Z",
+        "owner": 2,
+        "name": "Grandmother",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing a good player & their character.",
+        "desc2": "If the Demon kills them, you die too.",
+        "desc3": "",
+        "night_first_desc": "Show the marked character token. Point to the marked player.",
+        "night_other_desc": "If the Grandmother's grandchild was killed by the Demon tonight: The Grandmother dies.",
+        "night_first_order": "37.00",
+        "night_other_order": "49.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Grandmother_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 49,
+    "fields": {
+        "created_at": "2021-09-08T22:09:30.970Z",
+        "updated_at": "2021-09-22T03:03:44.825Z",
+        "owner": 2,
+        "name": "Sailor",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, choose an alive player:",
+        "desc2": "either you or they are drunk until dusk. You can't die.",
+        "desc3": "",
+        "night_first_desc": "The Sailor points to a living player. Either the Sailor, or the chosen player, is drunk.",
+        "night_other_desc": "The previously drunk player is no longer drunk. The Sailor points to a living player. Either the Sailor, or the chosen player, is drunk.",
+        "night_first_order": "9.00",
+        "night_other_order": "4.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Sailor_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 50,
+    "fields": {
+        "created_at": "2021-09-08T22:10:04.191Z",
+        "updated_at": "2021-09-22T03:17:19.621Z",
+        "owner": 2,
+        "name": "Chambermaid",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, choose 2 alive players (not yourself):",
+        "desc2": "you learn how many woke tonight due to their ability.",
+        "desc3": "",
+        "night_first_desc": "The Chambermaid points to two players. Show the number signal (0, 1, 2, ...) for how many of those players wake tonight for their ability.",
+        "night_other_desc": "The Chambermaid points to two players. Show the number signal (0, 1, 2, ...) for how many of those players wake tonight for their ability.",
+        "night_first_order": "47.00",
+        "night_other_order": "68.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Chambermaid_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 51,
+    "fields": {
+        "created_at": "2021-09-08T22:10:41.315Z",
+        "updated_at": "2021-09-22T03:08:31.599Z",
+        "owner": 2,
+        "name": "Exorcist",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, choose a player (different to last night): the Demon,",
+        "desc2": "if chosen, learns who you are & doesn't wake tonight.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The Exorcist points to a player, different from the previous night. If that player is the Demon: Wake the Demon. Show the Exorcist token. Point to the Exorcist. The Demon does not act tonight.",
+        "night_first_order": "0.00",
+        "night_other_order": "21.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Exorcist_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 52,
+    "fields": {
+        "created_at": "2021-09-08T22:11:47.720Z",
+        "updated_at": "2021-09-22T03:05:26.614Z",
+        "owner": 2,
+        "name": "Innkeeper",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, choose 2 players:",
+        "desc2": "they can't die tonight, but 1 is drunk until dusk.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The previously protected and drunk players lose those markers. The Innkeeper points to two players. Those players are protected. One is drunk.",
+        "night_first_order": "0.00",
+        "night_other_order": "8.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Innkeeper_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 53,
+    "fields": {
+        "created_at": "2021-09-08T22:12:20.015Z",
+        "updated_at": "2021-09-22T03:05:46.596Z",
+        "owner": 2,
+        "name": "Gambler",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, choose a player & guess their character:",
+        "desc2": "if you guess wrong, you die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The Gambler points to a player, and a character on their sheet. If incorrect, the Gambler dies.",
+        "night_first_order": "0.00",
+        "night_other_order": "10.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Gambler_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 54,
+    "fields": {
+        "created_at": "2021-09-08T22:12:56.678Z",
+        "updated_at": "2021-09-22T03:13:09.705Z",
+        "owner": 2,
+        "name": "Gossip",
+        "char_type": "Townsfolk",
+        "desc1": "Each day, you may make a public statement.",
+        "desc2": "Tonight, if it was true, a player dies.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Gossip's public statement was true: Choose a player not protected from dying tonight. That player dies.",
+        "night_first_order": "0.00",
+        "night_other_order": "46.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Gossip_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 55,
+    "fields": {
+        "created_at": "2021-09-08T22:13:45.419Z",
+        "updated_at": "2021-09-22T03:05:39.866Z",
+        "owner": 2,
+        "name": "Courtier",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, at night, choose a character:",
+        "desc2": "they are drunk for 3 nights & 3 days.",
+        "desc3": "",
+        "night_first_desc": "The Courtier either shows a 'no' head signal, or points to a character on the sheet. If the Courtier used their ability: If that character is in play, that player is drunk.",
+        "night_other_desc": "Reduce the remaining number of days the marked player is poisoned. If the Courtier has not yet used their ability: The Courtier either shows a 'no' head signal, or points to a character on the sheet. If the Courtier used their ability: If that character is in play, that player is drunk.",
+        "night_first_order": "17.00",
+        "night_other_order": "9.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Courtier_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 56,
+    "fields": {
+        "created_at": "2021-09-08T22:15:29.415Z",
+        "updated_at": "2021-09-22T03:12:37.350Z",
+        "owner": 2,
+        "name": "Professor",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, at night*, choose a dead player:",
+        "desc2": "if they are a Townsfolk, they are resurrected.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Professor has not used their ability: The Professor either shakes their head no, or points to a player. If that player is a Townsfolk, they are now alive.",
+        "night_first_order": "0.00",
+        "night_other_order": "44.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Professor_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 57,
+    "fields": {
+        "created_at": "2021-09-08T22:16:07.753Z",
+        "updated_at": "2021-09-08T22:16:07.753Z",
+        "owner": 2,
+        "name": "Minstrel",
+        "char_type": "Townsfolk",
+        "desc1": "When a Minion dies by execution, all other players",
+        "desc2": "(except Travellers) are drunk until dusk tomorrow.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Minstrel_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 58,
+    "fields": {
+        "created_at": "2021-09-08T22:16:38.638Z",
+        "updated_at": "2021-09-08T22:16:38.638Z",
+        "owner": 2,
+        "name": "Tea Lady",
+        "char_type": "Townsfolk",
+        "desc1": "If both your alive neighbors are good,",
+        "desc2": "they can't die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Tea_Lady_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 59,
+    "fields": {
+        "created_at": "2021-09-08T22:17:10.627Z",
+        "updated_at": "2021-09-08T22:17:10.627Z",
+        "owner": 2,
+        "name": "Pacifist",
+        "char_type": "Townsfolk",
+        "desc1": "Executed good players",
+        "desc2": "might not die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Pacifist_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 60,
+    "fields": {
+        "created_at": "2021-09-08T22:17:31.991Z",
+        "updated_at": "2021-09-08T22:17:31.991Z",
+        "owner": 2,
+        "name": "Fool",
+        "char_type": "Townsfolk",
+        "desc1": "The 1st time you die,",
+        "desc2": "you don't.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Fool_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 61,
+    "fields": {
+        "created_at": "2021-09-08T22:18:15.216Z",
+        "updated_at": "2021-09-08T22:18:15.216Z",
+        "owner": 2,
+        "name": "Goon",
+        "char_type": "Outsider",
+        "desc1": "Each night, the 1st player to choose you with their ability",
+        "desc2": "is drunk until dusk. You become their alignment.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Goon_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 62,
+    "fields": {
+        "created_at": "2021-09-08T22:18:50.570Z",
+        "updated_at": "2021-09-22T03:07:32.195Z",
+        "owner": 2,
+        "name": "Lunatic",
+        "char_type": "Outsider",
+        "desc1": "You think you are a Demon, but you are not.",
+        "desc2": "The Demon knows who you are & who you choose at night.",
+        "desc3": "",
+        "night_first_desc": "If 7 or more players: Show the Lunatic a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by the Lunatic is a Demon that would wake tonight: Allow the Lunatic to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon's real character token. Show them the Lunatic player. If the Lunatic attacked players: Show the real demon each marked player. Remove any Lunatic 'attack' markers.",
+        "night_other_desc": "Allow the Lunatic to do the actions of the Demon. Place their 'attack' markers. If the Lunatic selected players: Wake the Demon. Show the 'attack' marker, then point to each marked player. Remove any Lunatic 'attack' markers.",
+        "night_first_order": "6.00",
+        "night_other_order": "20.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Lunatic_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 63,
+    "fields": {
+        "created_at": "2021-09-08T22:19:14.901Z",
+        "updated_at": "2021-09-22T03:13:21.897Z",
+        "owner": 2,
+        "name": "Tinker",
+        "char_type": "Outsider",
+        "desc1": "You might die",
+        "desc2": "at any time.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The Tinker might die.",
+        "night_first_order": "0.00",
+        "night_other_order": "47.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Tinker_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 64,
+    "fields": {
+        "created_at": "2021-09-08T22:19:44.494Z",
+        "updated_at": "2021-09-22T03:13:35.732Z",
+        "owner": 2,
+        "name": "Moonchild",
+        "char_type": "Outsider",
+        "desc1": "When you learn that you died, publicly choose",
+        "desc2": "1 alive player. Tonight, if it was a good player, they die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Moonchild used their ability to target a player today: If that player is good, they die.",
+        "night_first_order": "0.00",
+        "night_other_order": "48.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Moonchild_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 65,
+    "fields": {
+        "created_at": "2021-09-08T22:20:15.718Z",
+        "updated_at": "2021-09-22T03:11:20.200Z",
+        "owner": 2,
+        "name": "Godfather",
+        "char_type": "Minion",
+        "desc1": "You start knowing which Outsiders are in-play. If 1 died today,",
+        "desc2": "choose a player tonight: they die. [-1 or +1 Outsider]",
+        "desc3": "",
+        "night_first_desc": "Show each of the Outsider tokens in play.",
+        "night_other_desc": "If an Outsider died today: The Godfather points to a player. That player dies.",
+        "night_first_order": "19.00",
+        "night_other_order": "37.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Godfather_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 66,
+    "fields": {
+        "created_at": "2021-09-08T22:20:45.056Z",
+        "updated_at": "2021-09-22T03:06:16.790Z",
+        "owner": 2,
+        "name": "Devil's Advocate",
+        "char_type": "Minion",
+        "desc1": "Each night, choose a living player (different to last night):",
+        "desc2": "if executed tomorrow, they don't die.",
+        "desc3": "",
+        "night_first_desc": "The Devil's Advocate points to a living player. That player survives execution tomorrow.",
+        "night_other_desc": "The Devil's Advocate points to a living player, different from the previous night. That player survives execution tomorrow.",
+        "night_first_order": "20.00",
+        "night_other_order": "13.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Devils_Advocate_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 67,
+    "fields": {
+        "created_at": "2021-09-08T22:21:39.303Z",
+        "updated_at": "2021-09-22T03:11:09.141Z",
+        "owner": 2,
+        "name": "Assassin",
+        "char_type": "Minion",
+        "desc1": "Once per game, at night*, choose a player: they die,",
+        "desc2": "even if for some reason they could not.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Assassin has not yet used their ability: The Assassin either shows the 'no' head signal, or points to a player. That player dies.",
+        "night_first_order": "0.00",
+        "night_other_order": "36.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Assassin_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 68,
+    "fields": {
+        "created_at": "2021-09-08T22:22:28.379Z",
+        "updated_at": "2021-09-08T22:22:28.379Z",
+        "owner": 2,
+        "name": "Mastermind",
+        "char_type": "Minion",
+        "desc1": "If the Demon dies by execution (ending the game), play for",
+        "desc2": "1 more day. If a player is then executed, their team loses.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Mastermind_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 69,
+    "fields": {
+        "created_at": "2021-09-08T22:23:26.501Z",
+        "updated_at": "2021-09-22T03:09:20.594Z",
+        "owner": 2,
+        "name": "Zombuul",
+        "char_type": "Demon",
+        "desc1": "Each night*, if no-one died today, choose a player: they die.",
+        "desc2": "The 1st time you die, you live but register as dead.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If no-one died during the day: The Zombuul points to a player. That player dies.",
+        "night_first_order": "0.00",
+        "night_other_order": "24.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Zombuul_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 70,
+    "fields": {
+        "created_at": "2021-09-08T22:23:55.107Z",
+        "updated_at": "2021-09-22T03:09:27.868Z",
+        "owner": 2,
+        "name": "Pukka",
+        "char_type": "Demon",
+        "desc1": "Each night, choose a player: they are poisoned.",
+        "desc2": "The previously poisoned player dies then becomes healthy.",
+        "desc3": "",
+        "night_first_desc": "The Pukka points to a player. That player is poisoned.",
+        "night_other_desc": "The Pukka points to a player. That player is poisoned. The previously poisoned player dies.",
+        "night_first_order": "26.00",
+        "night_other_order": "25.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Pukka_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 71,
+    "fields": {
+        "created_at": "2021-09-08T22:24:37.770Z",
+        "updated_at": "2021-09-22T03:09:36.059Z",
+        "owner": 2,
+        "name": "Shabaloth",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose 2 players: they die.",
+        "desc2": "A dead player you chose last night might be regurgitated.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "One player that the Shabaloth chose the previous night might be resurrected. The Shabaloth points to two players. Those players die.",
+        "night_first_order": "0.00",
+        "night_other_order": "26.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Shabaloth_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 72,
+    "fields": {
+        "created_at": "2021-09-08T22:25:24.102Z",
+        "updated_at": "2021-09-22T03:09:44.047Z",
+        "owner": 2,
+        "name": "Po",
+        "char_type": "Demon",
+        "desc1": "Each night*, you may choose a player: they die.",
+        "desc2": "If your last choice was no-one, choose 3 players tonight.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the Po chose no-one the previous night: The Po points to three players. Otherwise: The Po either shows the 'no' head signal , or points to a player. Chosen players die.",
+        "night_first_order": "0.00",
+        "night_other_order": "27.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Po_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 73,
+    "fields": {
+        "created_at": "2021-09-09T00:42:52.396Z",
+        "updated_at": "2021-09-22T03:03:55.274Z",
+        "owner": 2,
+        "name": "Amnesiac",
+        "char_type": "Townsfolk",
+        "desc1": "You do not know what your ability is. Each day,",
+        "desc2": "privately guess what it is: you learn how accurate you are.",
+        "desc3": "",
+        "night_first_desc": "Decide the Amnesiac's entire ability. If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
+        "night_other_desc": "If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
+        "night_first_order": "11.00",
+        "night_other_order": "5.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Amnesiac_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 74,
+    "fields": {
+        "created_at": "2021-09-09T00:43:24.179Z",
+        "updated_at": "2021-09-22T03:15:41.769Z",
+        "owner": 2,
+        "name": "Balloonist",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, you learn 1 player of each character type,",
+        "desc2": "until there are no more types to learn. [+1 Outsider]",
+        "desc3": "",
+        "night_first_desc": "Choose a character type. Point to a player whose character is of that type. Place the Balloonist's Seen reminder next to that character.",
+        "night_other_desc": "Choose a character type that does not yet have a Seen reminder next to a character of that type. Point to a player whose character is of that type, if there are any. Place the Balloonist's Seen reminder next to that character.",
+        "night_first_order": "42.00",
+        "night_other_order": "62.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Balloonist_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 75,
+    "fields": {
+        "created_at": "2021-09-09T00:44:14.316Z",
+        "updated_at": "2021-09-22T03:16:31.841Z",
+        "owner": 2,
+        "name": "Bounty Hunter",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing 1 evil player. If the evil player you know",
+        "desc2": "dies, you learn another that night. [1 Townsfolk is evil]",
+        "desc3": "",
+        "night_first_desc": "Point to 1 evil player. Wake the townsfolk who is evil and show them the 'You are' card and the thumbs down evil sign.",
+        "night_other_desc": "If the known evil player has died, point to another evil player.",
+        "night_first_order": "43.00",
+        "night_other_order": "64.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Bounty_Hunter_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 76,
+    "fields": {
+        "created_at": "2021-09-09T00:44:54.395Z",
+        "updated_at": "2021-09-09T00:44:54.395Z",
+        "owner": 2,
+        "name": "Cannibal",
+        "char_type": "Townsfolk",
+        "desc1": "You have the ability of the recently killed executee. If they",
+        "desc2": "are evil, you are poisoned until a good player dies by execution.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Cannibal_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 77,
+    "fields": {
+        "created_at": "2021-09-09T00:45:28.656Z",
+        "updated_at": "2021-09-22T03:12:28.849Z",
+        "owner": 2,
+        "name": "Choirboy",
+        "char_type": "Townsfolk",
+        "desc1": "If the Demon kills the King, you learn",
+        "desc2": "which player the Demon is. [+ the King]",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If the King was killed by the Demon, wake the Choirboy and point to the Demon player.",
+        "night_first_order": "0.00",
+        "night_other_order": "43.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Choirboy_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 78,
+    "fields": {
+        "created_at": "2021-09-09T00:46:00.061Z",
+        "updated_at": "2021-09-22T03:16:39.010Z",
+        "owner": 2,
+        "name": "Cult Leader",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, you become the alignment of an alive neighbor.",
+        "desc2": "If all good players choose to join your cult, you win.",
+        "desc3": "",
+        "night_first_desc": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
+        "night_other_desc": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
+        "night_first_order": "44.00",
+        "night_other_order": "65.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Cult_Leader_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 79,
+    "fields": {
+        "created_at": "2021-09-09T00:47:15.898Z",
+        "updated_at": "2021-09-22T03:12:46.798Z",
+        "owner": 2,
+        "name": "Farmer",
+        "char_type": "Townsfolk",
+        "desc1": "If you die at night,",
+        "desc2": "an alive good player becomes a Farmer.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If a Farmer died tonight, choose another good player and make them the Farmer. Wake this player, show them the 'You are' card and the Farmer character token.",
+        "night_first_order": "0.00",
+        "night_other_order": "45.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Farmer_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 80,
+    "fields": {
+        "created_at": "2021-09-09T00:47:55.031Z",
+        "updated_at": "2021-09-09T00:47:55.031Z",
+        "owner": 2,
+        "name": "Fisherman",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, during the day,",
+        "desc2": "visit the Storyteller for some advice to help you win.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Fisherman_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 81,
+    "fields": {
+        "created_at": "2021-09-09T00:48:26.736Z",
+        "updated_at": "2021-09-22T03:17:06.888Z",
+        "owner": 2,
+        "name": "General",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, you learn which alignment the",
+        "desc2": "Storyteller believes is winning: good, evil, or neither.",
+        "desc3": "",
+        "night_first_desc": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
+        "night_other_desc": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
+        "night_first_order": "46.00",
+        "night_other_order": "67.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/General_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 82,
+    "fields": {
+        "created_at": "2021-09-09T00:49:22.995Z",
+        "updated_at": "2021-09-22T03:13:53.271Z",
+        "owner": 2,
+        "name": "Huntsman",
+        "char_type": "Townsfolk",
+        "desc1": "Once per game, at night, choose a living player:",
+        "desc2": "the Damsel, if chosen, becomes a not-in-play Townsfolk.",
+        "desc3": "[+the Damsel]",
+        "night_first_desc": "The Huntsman shakes their head 'no' or points to a player. If they point to the Damsel, wake that player, show the 'You are' card and a not-in-play character token.",
+        "night_other_desc": "The Huntsman shakes their head 'no' or points to a player. If they point to the Damsel, wake that player, show the 'You are' card and a not-in-play character token.",
+        "night_first_order": "28.00",
+        "night_other_order": "50.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Huntsman_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 83,
+    "fields": {
+        "created_at": "2021-09-09T00:50:06.572Z",
+        "updated_at": "2021-09-22T03:16:20.989Z",
+        "owner": 2,
+        "name": "King",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, if the dead outnumber the living, you learn",
+        "desc2": "1 alive character. The Demon knows who you are.",
+        "desc3": "",
+        "night_first_desc": "Wake the Demon, show them the 'This character selected you' card, show the King token and point to the King player.",
+        "night_other_desc": "If there are more dead than living, show the King a character token of a living player.",
+        "night_first_order": "8.00",
+        "night_other_order": "63.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/King_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 84,
+    "fields": {
+        "created_at": "2021-09-09T00:50:39.178Z",
+        "updated_at": "2021-09-22T03:08:40.191Z",
+        "owner": 2,
+        "name": "Lycanthrope",
+        "char_type": "Townsfolk",
+        "desc1": "Each night*, choose an alive player: if good,",
+        "desc2": "they die, but they are the only player that can die tonight.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The Lycanthrope points to a living player: if good, they die and no one else can die tonight.",
+        "night_first_order": "0.00",
+        "night_other_order": "22.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Lycanthrope_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 85,
+    "fields": {
+        "created_at": "2021-09-09T00:51:14.155Z",
+        "updated_at": "2021-09-09T00:51:14.155Z",
+        "owner": 2,
+        "name": "Magician",
+        "char_type": "Townsfolk",
+        "desc1": "The Demon thinks you are a Minion.",
+        "desc2": "Minions think you are a Demon.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Magician_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 86,
+    "fields": {
+        "created_at": "2021-09-09T00:55:53.196Z",
+        "updated_at": "2021-09-22T02:52:43.975Z",
+        "owner": 2,
+        "name": "Noble",
+        "char_type": "You start knowing 3 players,",
+        "desc1": "1 and only 1 of which is evil.",
+        "desc2": "",
+        "desc3": "",
+        "night_first_desc": "Point to 3 players including one evil player, in no particular order.",
+        "night_other_desc": "",
+        "night_first_order": "41.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 87,
+    "fields": {
+        "created_at": "2021-09-09T00:56:38.558Z",
+        "updated_at": "2021-09-22T02:49:57.852Z",
+        "owner": 2,
+        "name": "Pixie",
+        "char_type": "Townsfolk",
+        "desc1": "You start knowing 1 in-play Townsfolk. If you",
+        "desc2": "were mad that you were this character,",
+        "desc3": "you gain their ability when they die.",
+        "night_first_desc": "Show the Pixie 1 in-play Townsfolk character token.",
+        "night_other_desc": "",
+        "night_first_order": "27.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Pixie_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 88,
+    "fields": {
+        "created_at": "2021-09-09T00:57:31.440Z",
+        "updated_at": "2021-09-22T03:03:36.022Z",
+        "owner": 2,
+        "name": "Poppy Grower",
+        "char_type": "Townsfolk",
+        "desc1": "Minions & Demons do not know each other.",
+        "desc2": "If you die, they learn who each other are that night.",
+        "desc3": "",
+        "night_first_desc": "Do not inform the Demon/Minions who each other are.",
+        "night_other_desc": "If the Poppy Grower has died, show the Minions/Demon who each other are.",
+        "night_first_order": "3.00",
+        "night_other_order": "3.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Poppy_Grower_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 89,
+    "fields": {
+        "created_at": "2021-09-09T00:58:47.175Z",
+        "updated_at": "2021-09-22T03:04:48.884Z",
+        "owner": 2,
+        "name": "Preacher",
+        "char_type": "Townsfolk",
+        "desc1": "Each night, choose a player: a Minion, if chosen,",
+        "desc2": "learns this. All chosen Minions have no ability.",
+        "desc3": "",
+        "night_first_desc": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
+        "night_other_desc": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
+        "night_first_order": "12.00",
+        "night_other_order": "6.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Preacher_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 90,
+    "fields": {
+        "created_at": "2021-09-09T00:59:18.343Z",
+        "updated_at": "2021-09-22T03:11:27.265Z",
+        "owner": 2,
+        "name": "Acrobat",
+        "char_type": "Outsider",
+        "desc1": "Each night*, if either good living neighbor",
+        "desc2": "is drunk or poisoned, you die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "If a good living neighbour is drunk or poisoned, the Acrobat player dies.",
+        "night_first_order": "0.00",
+        "night_other_order": "38.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Acrobat_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 91,
+    "fields": {
+        "created_at": "2021-09-09T01:00:31.009Z",
+        "updated_at": "2021-09-22T03:14:00.861Z",
+        "owner": 2,
+        "name": "Damsel",
+        "char_type": "Outsider",
+        "desc1": "All Minions know you are in play. If a Minion",
+        "desc2": "publicly guesses you (once), your team loses.",
+        "desc3": "",
+        "night_first_desc": "Wake all the Minions, show them the 'This character selected you' card and the Damsel token.",
+        "night_other_desc": "If selected by the Huntsman, wake the Damsel, show 'You are' card and a not-in-play Townsfolk token.",
+        "night_first_order": "29.00",
+        "night_other_order": "51.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Damsel_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 92,
+    "fields": {
+        "created_at": "2021-09-09T01:01:00.747Z",
+        "updated_at": "2021-09-09T01:01:00.747Z",
+        "owner": 2,
+        "name": "Golem",
+        "char_type": "Outsider",
+        "desc1": "You many only nominate once per game.",
+        "desc2": "When you do, if the nominee is not the Demon, they die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Golem_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 93,
+    "fields": {
+        "created_at": "2021-09-09T01:02:02.487Z",
+        "updated_at": "2021-09-09T01:02:02.487Z",
+        "owner": 2,
+        "name": "Heretic",
+        "char_type": "Outsider",
+        "desc1": "Whoever wins, loses & whoever loses, wins,",
+        "desc2": "even if you are dead.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Heretic_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 94,
+    "fields": {
+        "created_at": "2021-09-09T01:02:45.706Z",
+        "updated_at": "2021-09-09T01:02:45.706Z",
+        "owner": 2,
+        "name": "Politician",
+        "char_type": "Outsider",
+        "desc1": "If you were the player most responsible for",
+        "desc2": "your team losing, you change alignment & win,",
+        "desc3": "even if dead.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Politician_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 95,
+    "fields": {
+        "created_at": "2021-09-09T01:03:56.015Z",
+        "updated_at": "2021-09-22T02:45:42.673Z",
+        "owner": 2,
+        "name": "Snitch",
+        "char_type": "Outsider",
+        "desc1": "Minions start knowing 3",
+        "desc2": "not-in-play characters.",
+        "desc3": "",
+        "night_first_desc": "After Minion info wake each Minion and show them three not-in-play character tokens. These may be the same or different to each other and the ones shown to the Demon.",
+        "night_other_desc": "",
+        "night_first_order": "5.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Snitch_icon_rUoUO0k.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 96,
+    "fields": {
+        "created_at": "2021-09-09T01:04:50.121Z",
+        "updated_at": "2021-09-09T01:04:50.121Z",
+        "owner": 2,
+        "name": "Boomdandy",
+        "char_type": "Minion",
+        "desc1": "If you are executed, all but 3 players die.",
+        "desc2": "1 minute later, the player with the most players",
+        "desc3": "pointing at them, dies.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Boomdandy_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 97,
+    "fields": {
+        "created_at": "2021-09-09T01:05:49.988Z",
+        "updated_at": "2021-09-09T01:05:49.988Z",
+        "owner": 2,
+        "name": "Goblin",
+        "char_type": "Minion",
+        "desc1": "If you publicly claim to be the Goblin",
+        "desc2": "when nominated & are executed that day,",
+        "desc3": "your team wins.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Goblin_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 98,
+    "fields": {
+        "created_at": "2021-09-09T01:06:35.694Z",
+        "updated_at": "2021-09-22T02:46:22.776Z",
+        "owner": 2,
+        "name": "Marionette",
+        "char_type": "Minion",
+        "desc1": "You think you are a good character, but you are not.",
+        "desc2": "The Demon knows who you are.",
+        "desc3": "[You neighbor the Demon]",
+        "night_first_desc": "Select one of the good players next to the Demon and place the Is the Marionette reminder token. Wake the Demon and show them the Marionette.",
+        "night_other_desc": "",
+        "night_first_order": "10.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Marionette_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 99,
+    "fields": {
+        "created_at": "2021-09-09T01:07:23.894Z",
+        "updated_at": "2021-09-22T03:06:59.286Z",
+        "owner": 2,
+        "name": "Mezepheles",
+        "char_type": "Minion",
+        "desc1": "You start knowing a secret word. The 1st good player",
+        "desc2": "to say this word becomes evil that night.",
+        "desc3": "",
+        "night_first_desc": "Show the Mezepheles their secret word.",
+        "night_other_desc": "Wake the 1st good player that said the Mezepheles' secret word and show them the 'You are' card and the thumbs down evil signal.",
+        "night_first_order": "25.00",
+        "night_other_order": "18.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Mezepheles_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 100,
+    "fields": {
+        "created_at": "2021-09-09T01:08:06.077Z",
+        "updated_at": "2021-09-22T02:47:42.419Z",
+        "owner": 2,
+        "name": "Widow",
+        "char_type": "Minion",
+        "desc1": "On your 1st night, look at the Grimoire &",
+        "desc2": "choose a player: they are poisoned.",
+        "desc3": "1 good player knows a Widow is in play.",
+        "night_first_desc": "Show the Grimoire to the Widow for as long as they need. The Widow points to a player. That player is poisoned. Wake a good player. Show the 'These characters are in play' card, then the Widow character token.",
+        "night_other_desc": "",
+        "night_first_order": "16.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Widow_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 101,
+    "fields": {
+        "created_at": "2021-09-09T01:09:01.900Z",
+        "updated_at": "2021-09-22T03:10:29.713Z",
+        "owner": 2,
+        "name": "Al-Hadikhia",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose 3 players (all players learn who):",
+        "desc2": "each silently chooses to live or die,",
+        "desc3": "but if all live, all die.",
+        "night_first_desc": "",
+        "night_other_desc": "The Al-Hadikhia chooses 3 players. Announce the first player, wake them to nod yes to live or shake head no to die, kill or resurrect accordingly, then put to sleep and announce the next player. If all 3 are alive after this, all 3 die.",
+        "night_first_order": "0.00",
+        "night_other_order": "32.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Al-Hadikhia_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 102,
+    "fields": {
+        "created_at": "2021-09-09T01:09:47.667Z",
+        "updated_at": "2021-09-22T03:10:39.138Z",
+        "owner": 2,
+        "name": "Legion",
+        "char_type": "Demon",
+        "desc1": "Each night*, a player might die. Executions fail if",
+        "desc2": "only evil voted. You register as a Minion too.",
+        "desc3": "[Most players are Legion]",
+        "night_first_desc": "",
+        "night_other_desc": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]",
+        "night_first_order": "0.00",
+        "night_other_order": "33.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Legion_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 103,
+    "fields": {
+        "created_at": "2021-09-09T01:10:50.019Z",
+        "updated_at": "2021-09-09T01:10:50.019Z",
+        "owner": 2,
+        "name": "Leviathan",
+        "char_type": "Demon",
+        "desc1": "If more than 1 good player is executed,",
+        "desc2": "evil wins. All players know you are in play.",
+        "desc3": "After 5 days, evil wins.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Leviathan_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 104,
+    "fields": {
+        "created_at": "2021-09-09T01:11:54.103Z",
+        "updated_at": "2021-09-22T03:10:54.293Z",
+        "owner": 2,
+        "name": "Lil' Monsta",
+        "char_type": "Demon",
+        "desc1": "Each night, Minions choose who babysits Lil' Monsta's token",
+        "desc2": "& \"is the Demon\". A player dies each night*.",
+        "desc3": "[+1 Minion]",
+        "night_first_desc": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta.",
+        "night_other_desc": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta. Choose a player, that player dies.",
+        "night_first_order": "14.00",
+        "night_other_order": "35.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/LilMonsta_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 105,
+    "fields": {
+        "created_at": "2021-09-09T01:13:07.132Z",
+        "updated_at": "2021-09-22T03:10:46.408Z",
+        "owner": 2,
+        "name": "Lleech",
+        "char_type": "Demon",
+        "desc1": "Each night*, choose a player: they die. You start by",
+        "desc2": "choosing an alive player: they are poisoned -",
+        "desc3": "you die if(& only if) they die.",
+        "night_first_desc": "The Lleech points to a player. Place the Poisoned reminder token.",
+        "night_other_desc": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if & only if they die.",
+        "night_first_order": "13.00",
+        "night_other_order": "34.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Lleech_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 106,
+    "fields": {
+        "created_at": "2021-09-21T04:08:26.200Z",
+        "updated_at": "2021-09-21T04:08:26.200Z",
+        "owner": 2,
+        "name": "Scapegoat",
+        "char_type": "Traveller",
+        "desc1": "If a player of your alignment is executed,",
+        "desc2": "you might be executed instead.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Scapegoat_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 107,
+    "fields": {
+        "created_at": "2021-09-21T04:09:09.144Z",
+        "updated_at": "2021-09-21T04:09:09.144Z",
+        "owner": 2,
+        "name": "Gunslinger",
+        "char_type": "Traveller",
+        "desc1": "Each day, after the 1st vote has been tallied,",
+        "desc2": "you may choose a player that voted: they die.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Gunslinger_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 108,
+    "fields": {
+        "created_at": "2021-09-21T04:10:27.762Z",
+        "updated_at": "2021-09-21T04:10:27.763Z",
+        "owner": 2,
+        "name": "Beggar",
+        "char_type": "Traveller",
+        "desc1": "You must use a vote token to vote.",
+        "desc2": "If a dead player gives you theirs, you learn",
+        "desc3": "their alignment. You are sober & healthy.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Beggar_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 109,
+    "fields": {
+        "created_at": "2021-09-21T04:11:28.798Z",
+        "updated_at": "2021-09-22T02:44:20.195Z",
+        "owner": 2,
+        "name": "Bureaucrat",
+        "char_type": "Traveller",
+        "desc1": "Each night, choose a player (not yourself):",
+        "desc2": "their vote counts as 3 votes tomorrow.",
+        "desc3": "",
+        "night_first_desc": "The Bureaucrat points to a player. Put the Bureaucrat's '3 votes' reminder by the chosen player's character token.",
+        "night_other_desc": "The Bureaucrat points to a player. Put the Bureaucrat's '3 votes' reminder by the chosen player's character token.",
+        "night_first_order": "1.00",
+        "night_other_order": "1.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Bureaucrat_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 110,
+    "fields": {
+        "created_at": "2021-09-21T04:12:02.843Z",
+        "updated_at": "2021-09-22T02:57:18.471Z",
+        "owner": 2,
+        "name": "Thief",
+        "char_type": "Traveller",
+        "desc1": "Each night, choose a player (not yourself):",
+        "desc2": "their vote counts negatively tomorrow.",
+        "desc3": "",
+        "night_first_desc": "The Thief points to a player. Put the Thief's 'Negative vote' reminder by the chosen player's character token.",
+        "night_other_desc": "The Thief points to a player. Put the Thief's 'Negative vote' reminder by the chosen player's character token.",
+        "night_first_order": "1.10",
+        "night_other_order": "1.10",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Thief_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 111,
+    "fields": {
+        "created_at": "2021-09-21T04:13:04.629Z",
+        "updated_at": "2021-09-22T02:57:28.199Z",
+        "owner": 2,
+        "name": "Apprentice",
+        "char_type": "Traveller",
+        "desc1": "On your 1st night, you gain",
+        "desc2": "a Townsfolk ability (if good),",
+        "desc3": "or a Minion ability (if evil).",
+        "night_first_desc": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
+        "night_other_desc": "",
+        "night_first_order": "1.20",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Apprentice_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 112,
+    "fields": {
+        "created_at": "2021-09-21T04:14:43.692Z",
+        "updated_at": "2021-09-21T04:14:43.692Z",
+        "owner": 2,
+        "name": "Matron",
+        "char_type": "Traveller",
+        "desc1": "Each day, you may choose up to 3 sets of",
+        "desc2": "2 players to swap seats. Players may not",
+        "desc3": "leave their seats to talk in private.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Matron_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 113,
+    "fields": {
+        "created_at": "2021-09-21T04:15:33.872Z",
+        "updated_at": "2021-09-21T04:15:33.872Z",
+        "owner": 2,
+        "name": "Voudon",
+        "char_type": "Traveller",
+        "desc1": "Only you & the dead can vote. They don't need",
+        "desc2": "a vote token to do so. A 50% majority isn't required.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Voudon_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 114,
+    "fields": {
+        "created_at": "2021-09-21T04:16:18.679Z",
+        "updated_at": "2021-09-21T04:16:18.679Z",
+        "owner": 2,
+        "name": "Judge",
+        "char_type": "Traveller",
+        "desc1": "Once per game, if another player nominated,",
+        "desc2": "you may choose to force the current execution",
+        "desc3": "to pass or fail.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Judge_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 115,
+    "fields": {
+        "created_at": "2021-09-21T04:17:14.998Z",
+        "updated_at": "2021-09-21T04:17:14.998Z",
+        "owner": 2,
+        "name": "Bishop",
+        "char_type": "Traveller",
+        "desc1": "Only the Storyteller can nominate. At least",
+        "desc2": "1 opposing player must be nominated each day.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Bishop_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 116,
+    "fields": {
+        "created_at": "2021-09-21T04:18:37.165Z",
+        "updated_at": "2021-09-21T04:18:37.165Z",
+        "owner": 2,
+        "name": "Butcher",
+        "char_type": "Traveller",
+        "desc1": "Each day, after the 1st execution,",
+        "desc2": "you may nominate again.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Butcher_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 117,
+    "fields": {
+        "created_at": "2021-09-21T04:19:29.452Z",
+        "updated_at": "2021-09-22T03:03:06.840Z",
+        "owner": 2,
+        "name": "Bone Collector",
+        "char_type": "Traveller",
+        "desc1": "Once per game, at night*, choose a dead player:",
+        "desc2": "they regain their ability until dusk.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
+        "night_first_order": "0.00",
+        "night_other_order": "1.40",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Bone_collector_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 118,
+    "fields": {
+        "created_at": "2021-09-21T04:20:11.430Z",
+        "updated_at": "2021-09-22T03:02:53.117Z",
+        "owner": 2,
+        "name": "Harlot",
+        "char_type": "Traveller",
+        "desc1": "Each night*, choose a living player:",
+        "desc2": "if they agree, you learn their character,",
+        "desc3": "but you both might die.",
+        "night_first_desc": "",
+        "night_other_desc": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+        "night_first_order": "0.00",
+        "night_other_order": "1.30",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Harlot_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 119,
+    "fields": {
+        "created_at": "2021-09-21T04:21:07.241Z",
+        "updated_at": "2021-09-22T03:02:41.150Z",
+        "owner": 2,
+        "name": "Barista",
+        "char_type": "Traveller",
+        "desc1": "Each night, until dusk, 1) A player becomes sober,",
+        "desc2": "healthy & gets true info, or 2)",
+        "desc3": "Their ability works twice. They learn which.",
+        "night_first_desc": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+        "night_other_desc": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+        "night_first_order": "1.30",
+        "night_other_order": "1.20",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Barista_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 120,
+    "fields": {
+        "created_at": "2021-09-21T04:21:39.597Z",
+        "updated_at": "2021-09-21T04:21:39.597Z",
+        "owner": 2,
+        "name": "Deviant",
+        "char_type": "Traveller",
+        "desc1": "If you were funny today,",
+        "desc2": "you cannot die by exile.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Deviant_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 121,
+    "fields": {
+        "created_at": "2021-09-21T04:22:59.778Z",
+        "updated_at": "2021-09-21T04:22:59.778Z",
+        "owner": 2,
+        "name": "Gangster",
+        "char_type": "Traveller",
+        "desc1": "Once per day, you may choose to kill",
+        "desc2": "an aliive neighbor, if your other alive neighbor agrees.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Gangster_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 122,
+    "fields": {
+        "created_at": "2021-09-21T04:26:19.911Z",
+        "updated_at": "2021-09-21T04:26:19.911Z",
+        "owner": 2,
+        "name": "Doomsayer",
+        "char_type": "Fabled",
+        "desc1": "If 4 or more players live, each living player may",
+        "desc2": "publicly choose (once per game) that",
+        "desc3": "a player of their own alignment dies.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Doomsayer_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 123,
+    "fields": {
+        "created_at": "2021-09-21T04:26:49.897Z",
+        "updated_at": "2021-09-21T04:26:49.897Z",
+        "owner": 2,
+        "name": "Angel",
+        "char_type": "Fabled",
+        "desc1": "Something bad might happen to whoever is most responsible",
+        "desc2": "for the death of a new player.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Angel_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 124,
+    "fields": {
+        "created_at": "2021-09-21T04:27:17.011Z",
+        "updated_at": "2021-09-21T04:27:17.011Z",
+        "owner": 2,
+        "name": "Buddhist",
+        "char_type": "Fabled",
+        "desc1": "For the first 2 minutes of each day,",
+        "desc2": "veteran players may not talk.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Buddhist_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 125,
+    "fields": {
+        "created_at": "2021-09-21T04:27:51.676Z",
+        "updated_at": "2021-09-21T04:27:51.676Z",
+        "owner": 2,
+        "name": "Hell's Librarian",
+        "char_type": "Fabled",
+        "desc1": "Something bad might happen to whoever talks",
+        "desc2": "when the Storyteller has asked for silence.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Hells_Librarian_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 126,
+    "fields": {
+        "created_at": "2021-09-21T04:28:45.791Z",
+        "updated_at": "2021-09-21T04:28:45.791Z",
+        "owner": 2,
+        "name": "Revolutionary",
+        "char_type": "Fabled",
+        "desc1": "2 neighboring players are known to be the same alignment.",
+        "desc2": "Once per game, one of them registers falsely.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Revolutionary_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 127,
+    "fields": {
+        "created_at": "2021-09-21T04:29:44.260Z",
+        "updated_at": "2021-09-21T04:29:44.260Z",
+        "owner": 2,
+        "name": "Fiddler",
+        "char_type": "Fabled",
+        "desc1": "Once per game, the Demon secretly chooses",
+        "desc2": "an opposing player: all players choose",
+        "desc3": "which of these 2 players win.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Fiddler_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 128,
+    "fields": {
+        "created_at": "2021-09-21T04:30:45.742Z",
+        "updated_at": "2021-09-21T04:30:45.742Z",
+        "owner": 2,
+        "name": "Toymaker",
+        "char_type": "Fabled",
+        "desc1": "The Demon may choose not to attack",
+        "desc2": "& must do this at least once per game.",
+        "desc3": "Evil players get normal starting info.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Toymaker_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 129,
+    "fields": {
+        "created_at": "2021-09-21T04:31:26.458Z",
+        "updated_at": "2021-09-21T04:31:26.459Z",
+        "owner": 2,
+        "name": "Fibbin",
+        "char_type": "Fabled",
+        "desc1": "Once per game, 1 good player",
+        "desc2": "might get incorrect information.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Fibbin_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 130,
+    "fields": {
+        "created_at": "2021-09-21T04:32:13.358Z",
+        "updated_at": "2021-09-21T04:32:13.358Z",
+        "owner": 2,
+        "name": "Duchess",
+        "char_type": "Fabled",
+        "desc1": "Each day, 3 players may choose to visit you.",
+        "desc2": "At night*, each visitor learns how many",
+        "desc3": "visitors are evil, but 1 gets false info.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Duchess_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 131,
+    "fields": {
+        "created_at": "2021-09-21T04:32:53.293Z",
+        "updated_at": "2021-09-21T04:32:53.293Z",
+        "owner": 2,
+        "name": "Sentinel",
+        "char_type": "Fabled",
+        "desc1": "There might be 1 extra or",
+        "desc2": "1 fewer Outsider in play.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Sentinel_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 132,
+    "fields": {
+        "created_at": "2021-09-21T04:33:18.995Z",
+        "updated_at": "2021-09-21T04:33:18.995Z",
+        "owner": 2,
+        "name": "Spirit of Ivory",
+        "char_type": "Fabled",
+        "desc1": "There can't be more than 1 extra evil player.",
+        "desc2": "",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Spirit_Of_Ivory_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 133,
+    "fields": {
+        "created_at": "2021-09-21T04:33:56.924Z",
+        "updated_at": "2021-09-21T04:33:56.924Z",
+        "owner": 2,
+        "name": "Djinn",
+        "char_type": "Fabled",
+        "desc1": "Use the Djinn's special rule.",
+        "desc2": "All players know what it is.",
+        "desc3": "",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Djinn_Icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 134,
+    "fields": {
+        "created_at": "2021-09-21T04:35:04.058Z",
+        "updated_at": "2021-09-21T04:35:04.058Z",
+        "owner": 2,
+        "name": "Storm Catcher",
+        "char_type": "Fabled",
+        "desc1": "Name a good character. If in play, they can only",
+        "desc2": "die by execution, but evil players",
+        "desc3": "learn which player it is.",
+        "night_first_desc": "",
+        "night_other_desc": "",
+        "night_first_order": "0.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Storm_Catcher_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 135,
+    "fields": {
+        "created_at": "2021-09-21T22:54:24.380Z",
+        "updated_at": "2021-09-22T03:06:49.557Z",
+        "owner": 2,
+        "name": "Fearmonger",
+        "char_type": "Minion",
+        "desc1": "Each night, choose a player: if you nominate",
+        "desc2": "& execute them, their team loses.",
+        "desc3": "All players know if you choose a new player.",
+        "night_first_desc": "The Fearmonger points to a player. Place the Fear token next to that player and announce that a new player has been selected with the Fearmonger ability.",
+        "night_other_desc": "The Fearmonger points to a player. If different from the previous night, place the Fear token next to that player and announce that a new player has been selected with the Fearmonger ability.",
+        "night_first_order": "24.00",
+        "night_other_order": "17.00",
+        "custom": false,
+        "visible": true,
+        "playable": true,
+        "image": "char_icons/Fearmonger_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 136,
+    "fields": {
+        "created_at": "2021-09-22T03:39:58.996Z",
+        "updated_at": "2021-09-22T22:54:26.013Z",
+        "owner": 2,
+        "name": "Demon Info",
+        "char_type": "",
+        "desc1": "Demon info",
+        "desc2": "",
+        "desc3": "",
+        "night_first_desc": "If 7 or more players: wake up the Demon. Show the 'These are your minions' card. Point to each Minion. Show the 'This is the Demon' card. Show 3 character tokens of Good characters that are not in play.",
+        "night_other_desc": "",
+        "night_first_order": "7.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": false,
+        "image": "char_icons/Demon_info_icon_JNEG9WD.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 137,
+    "fields": {
+        "created_at": "2021-09-22T03:41:00.024Z",
+        "updated_at": "2021-09-22T07:38:25.302Z",
+        "owner": 2,
+        "name": "Minion Info",
+        "char_type": "",
+        "desc1": "Minion Info",
+        "desc2": "",
+        "desc3": "",
+        "night_first_desc": "If 7 or more players: wake up all of the Minions. They make eye contact with each other. Show the 'This is the Demon' card. Point to the Demon.",
+        "night_other_desc": "",
+        "night_first_order": "4.00",
+        "night_other_order": "0.00",
+        "custom": false,
+        "visible": true,
+        "playable": false,
+        "image": "char_icons/Minion_info_icon.png"
+    }
+},
+{
+    "model": "char_scripts.character",
+    "pk": 138,
+    "fields": {
+        "created_at": "2021-09-22T03:43:02.953Z",
+        "updated_at": "2021-09-22T22:46:33.237Z",
+        "owner": 2,
+        "name": "Dawn",
+        "char_type": "",
+        "desc1": "Dawn",
+        "desc2": "",
+        "desc3": "",
+        "night_first_desc": "Wait approximately 10 seconds. Call for eyes open, then immediately announce which players (if any)  died.",
+        "night_other_desc": "Wait approximately 10 seconds. Call for eyes open, then immediately announce which players (if any) died.",
+        "night_first_order": "999.00",
+        "night_other_order": "999.00",
+        "custom": false,
+        "visible": true,
+        "playable": false,
+        "image": "char_icons/Dawn_icon.png"
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 1,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.129Z",
+        "character": 1,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 2,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.135Z",
+        "character": 2,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 3,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.143Z",
+        "character": 3,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 4,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.154Z",
+        "character": 4,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 5,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.163Z",
+        "character": 5,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 6,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.172Z",
+        "character": 6,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 7,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.178Z",
+        "character": 7,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 8,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.184Z",
+        "character": 8,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 9,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.191Z",
+        "character": 9,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 10,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.196Z",
+        "character": 10,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 11,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.201Z",
+        "character": 11,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 12,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.207Z",
+        "character": 12,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 13,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.212Z",
+        "character": 13,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 14,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.221Z",
+        "character": 14,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 15,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.230Z",
+        "character": 15,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 16,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.236Z",
+        "character": 16,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 17,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.244Z",
+        "character": 17,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 18,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.251Z",
+        "character": 18,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 19,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.259Z",
+        "character": 19,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 20,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.265Z",
+        "character": 20,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 21,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.270Z",
+        "character": 21,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 22,
+    "fields": {
+        "created_at": "2021-09-15T00:24:11.276Z",
+        "character": 22,
+        "version": 1
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 23,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.357Z",
+        "character": 48,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 24,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.365Z",
+        "character": 49,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 25,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.372Z",
+        "character": 50,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 26,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.380Z",
+        "character": 51,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 27,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.387Z",
+        "character": 52,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 28,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.396Z",
+        "character": 53,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 29,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.403Z",
+        "character": 54,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 30,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.412Z",
+        "character": 55,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 31,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.420Z",
+        "character": 56,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 32,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.426Z",
+        "character": 57,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 33,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.432Z",
+        "character": 58,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 34,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.439Z",
+        "character": 59,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 35,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.445Z",
+        "character": 60,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 36,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.451Z",
+        "character": 61,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 37,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.457Z",
+        "character": 62,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 38,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.463Z",
+        "character": 63,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 39,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.468Z",
+        "character": 64,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 40,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.473Z",
+        "character": 65,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 41,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.478Z",
+        "character": 66,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 42,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.483Z",
+        "character": 67,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 43,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.488Z",
+        "character": 68,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 44,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.493Z",
+        "character": 69,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 45,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.499Z",
+        "character": 70,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 46,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.504Z",
+        "character": 71,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 47,
+    "fields": {
+        "created_at": "2021-09-15T00:43:19.510Z",
+        "character": 72,
+        "version": 2
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 48,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.872Z",
+        "character": 23,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 49,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.878Z",
+        "character": 24,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 50,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.882Z",
+        "character": 25,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 51,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.887Z",
+        "character": 26,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 52,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.891Z",
+        "character": 27,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 53,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.897Z",
+        "character": 28,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 54,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.902Z",
+        "character": 29,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 55,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.906Z",
+        "character": 30,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 56,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.911Z",
+        "character": 31,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 57,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.916Z",
+        "character": 32,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 58,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.922Z",
+        "character": 33,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 59,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.928Z",
+        "character": 34,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 60,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.934Z",
+        "character": 35,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 61,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.939Z",
+        "character": 36,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 62,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.944Z",
+        "character": 37,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 63,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.949Z",
+        "character": 38,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 64,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.954Z",
+        "character": 39,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 65,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.959Z",
+        "character": 40,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 66,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.964Z",
+        "character": 41,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 67,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.970Z",
+        "character": 42,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 68,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.975Z",
+        "character": 43,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 69,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.979Z",
+        "character": 44,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 70,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.984Z",
+        "character": 45,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 71,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.990Z",
+        "character": 46,
+        "version": 3
+    }
+},
+{
+    "model": "char_scripts.versionchar",
+    "pk": 72,
+    "fields": {
+        "created_at": "2021-09-15T00:49:35.995Z",
+        "character": 47,
+        "version": 3
+    }
+}
+]

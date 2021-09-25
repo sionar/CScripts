@@ -1,0 +1,187 @@
+#script-create-char-select {
+  min-height: 100%;
+  min-width: 330px;
+  background-color: rgb(45, 45, 45);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#script-create-char-filter-input {
+  width: 280px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: rgb(45, 45, 45);
+  color: white;
+  border: 1px solid rgb(70,70,70);
+  padding: 0px 10px;
+}
+
+#script-create-char-filter-input:focus {
+  outline: none;
+}
+
+
+#script-create-char-select-select-box {
+  margin-top: 20px;
+  height: 500px;
+  width: 290px;
+  overflow-y: scroll;
+  overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.script-create-char-select-type-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.script-create-char-select-char {
+  position: relative;
+  width: 280px;
+  height: 40px;
+  background-color: rgb(40,40,40);
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.script-create-char-select-char:hover {
+  background-color: rgb(80,80,80);
+  height: 80px;
+}
+
+.script-create-char-select-char-image-box {
+  min-width: 29px;
+  min-height: 20px;
+}
+
+.script-create-char-select-char-image {
+  height: 20px;
+}
+
+.script-create-char-select-char-label {
+  margin-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.script-create-char-select-type-arrow-active {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 246px;
+  top: 18px;
+  border: 5px solid;
+  border-top-color: rgb(60, 60, 60);
+  border-right-color: rgb(40,40,40);
+  border-left-color: rgb(40, 40, 40);
+  border-bottom-color: rgb(40, 40, 40);
+}
+
+.script-create-char-select-type-label:hover .script-create-char-select-type-arrow-active {
+  border-top-color: rgb(180, 180, 180);
+  border-right-color: rgb(120,120,120);
+  border-left-color: rgb(120, 120, 120);
+  border-bottom-color: rgb(120, 120, 120);
+}
+
+.script-create-char-select-type-arrow-inactive {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 250px;
+  border: 5px solid;
+  border-top-color: rgb(40, 40, 40);
+  border-right-color: rgb(40,40,40);
+  border-left-color: rgb(60, 60, 60);
+  border-bottom-color: rgb(40, 40, 40);
+}
+
+.script-create-char-select-type-label:hover .script-create-char-select-type-arrow-inactive {
+  border-top-color: rgb(120, 120, 120);
+  border-right-color: rgb(120,120,120);
+  border-left-color: rgb(180, 180, 180);
+  border-bottom-color: rgb(120, 120, 120);
+}
+
+.script-create-char-select-char-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.script-create-char-select-char-tooltip-desc {
+  display: none;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.script-create-char-select-char:hover .script-create-char-select-char-tooltip-desc {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.script-create-char-select-type-label {
+  width: 280px;
+  border: 1px solid rgb(60,60,60);
+  background-color: rgb(40,40,40);
+  color: white;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.script-create-char-select-type-label:hover {
+  background-color: rgb(120,120,120);
+}
+
+#script-create-char-button-panel {
+  width: 280px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.script-create-char-button {
+  background-color: #282828;
+  color: white;
+  border: 1px solid #444444;
+  height: 40px;
+  width: 90px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.script-create-char-button:hover {
+  background-color: #444444;
+}
+
+#script-create-char-select-select-box::-webkit-scrollbar {
+  width: 10px;
+  margin-left: -5px;
+}
+
+#script-create-char-select-select-box::-webkit-scrollbar-track {
+  background: #444444;
+}
+
+#script-create-char-select-select-box::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+#script-create-char-select-select-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

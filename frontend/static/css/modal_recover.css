@@ -1,0 +1,260 @@
+#modal-recover-box {
+  width: 400px;
+  height: 550px; 
+  background-color: rgb(45,45,45);
+  border: 1px solid rgb(80,80,80);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-recover-header {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#modal-recover-header-label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+#modal-recover-header-close {
+  position: absolute;
+  right: 5px;
+  top: -18px;
+  color: white;
+  font-size: 20px;
+  user-select: none;
+}
+
+#modal-recover-nav {
+  width: 82%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid rgb(40,40,40);
+  margin-top: 10px;
+}
+
+.modal-recover-nav-button {
+  color: white;
+  padding: 5px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+
+#modal-recover-nav-login {
+  color: rgb(120,120,120);
+  margin-right: 5px;
+  border-bottom: 3px solid rgb(45,45,45);
+}
+
+#modal-recover-nav-login:hover {
+  color: rgb(160,160,160);
+}
+
+#modal-recover-nav-register {
+  color: rgb(120,120,120);
+  border-bottom: 3px solid rgb(45,45,45);
+}
+
+#modal-recover-nav-register:hover {
+  color: rgb(160,160,160);
+}
+
+#modal-recover-nav-recover {
+  color: white;
+  margin-left: auto;
+  border-bottom: 3px solid rgb(100,100,255);
+}
+
+#modal-recover-desc {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px 50px;
+  margin-top: 20px;
+}
+
+#modal-recover-form {
+  width: 100%;
+}
+
+#modal-recover-inputs-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-recover-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.modal-recover-label-box {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.modal-recover-label {
+  color: rgb(200,200,200);
+  margin-top: 5px;
+  margin-left: 20px;
+  align-self: flex-start;
+  font-family: sans-serif;
+}
+
+.modal-recover-label-error {
+  color: rgb(255,120,120);
+  font-family: system-ui;
+  font-size: 14px;
+  margin-right: 20px;
+  height: 18px;
+}
+
+.modal-recover-input {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  width: 88%;
+  height: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(80,80,80);
+  border: 1px solid rgb(80,80,80);
+  color: white;
+  caret-color: white;
+}
+
+.modal-recover-input:focus {
+  outline: none;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+  -webkit-box-shadow: 0 0 0 30px rgb(80,80,80) inset !important;
+  box-shadow: 0 0 0 30px rgb(80,80,80) inset !important;
+  -webkit-text-fill-color: white !important;
+  border: 1px solid rgb(80,80,80);
+  border-radius: 3px;
+  outline: none;
+}
+
+.modal-recover-submit-email {
+  width: 92%;
+  height: 32px;
+  background-color: rgb(100,100,255);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  margin-top: 35px;
+}
+
+.modal-recover-submit-email.disabled {
+  background-color: rgb(40,40,40);
+  color: rgb(120,120,120);
+}
+
+.modal-recover-submit-email:hover {
+  background-color: rgb(120,120,255);
+}
+
+.modal-recover-submit-email.disabled:hover {
+  background-color: rgb(40,40,40);
+}
+
+#modal-recover-error-notif {
+  height: 20px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgb(255,120,120);
+  font-family: system-ui;
+}
+
+#modal-recover-email-received-button {
+  color: rgb(180,180,180);
+  width: 90%;
+  margin-top: 5px;
+  margin-left: 35px;
+  font-family: sans-serif;
+  font-size: 12px;
+  user-select: none;
+}
+
+#modal-recover-email-received-button:hover {
+  text-decoration: underline;
+}
+
+.modal-recover-submit-password {
+  width: 82%;
+  height: 32px;
+  background-color: rgb(100,100,255);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  margin-top: 35px;
+}
+
+.modal-recover-submit-password.disabled {
+  background-color: rgb(40,40,40);
+  color: rgb(120,120,120);
+}
+
+.modal-recover-submit-password:hover {
+  background-color: rgb(120,120,255);
+}
+
+.modal-recover-submit-password.disabled:hover {
+  background-color: rgb(40,40,40);
+}
+
+#modal-recover-request-token {
+  color: rgb(180,180,180);
+  width: 90%;
+  margin-top: 5px;
+  margin-left: 35px;
+  font-family: sans-serif;
+  font-size: 12px;
+  user-select: none;
+}
+
+#modal-recover-request-token:focus {
+  text-decoration: underline;
+}
+
+#modal-recover-return {
+  color: rgb(180,180,180);
+  width: 100%;
+  margin-top: 5px;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+  user-select: none;
+}
+
+#modal-recover-return:hover {
+  text-decoration: underline;
+}

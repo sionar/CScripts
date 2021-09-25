@@ -1,0 +1,282 @@
+.script-list {
+  position: relative;
+  border: 1px solid rgb(160,160,160);
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-family: 'system-ui';
+}
+
+.script-list.large {
+  width: 988px;
+}
+
+.script-list.small {
+  width: 692px;
+}
+
+.script-list.index {
+  margin-bottom: 2vh;
+}
+
+
+.script-list-left-bar {
+  position: absolute;
+  left: 0px;
+  min-height: 100%;
+  background-color: rgb(40,40,40);
+}
+
+.script-list-left-bar.large{
+  min-width: 50px;
+}
+
+.script-list-left-bar.small{
+  min-width: 35px;
+}
+
+.script-list-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.script-list-header.large {
+  min-height: 78px;
+}
+
+.script-list-header.small {
+  min-height: 54.6px;
+}
+
+.script-list-header-left {
+  background-color: rgb(80,80,80);
+}
+
+.script-list-header-left.large {
+  min-width: 50px;
+}
+
+.script-list-header-left.small {
+  min-width: 35px;
+}
+
+.script-list-title {
+  margin-left: auto;
+  color: black;
+  text-align: right;
+}
+
+.script-list-title.large {
+  padding-top: 30px;
+  padding-right: 30px;
+  font-size: 36px;
+}
+
+.script-list-title.small {
+  padding-top: 21px;
+  padding-right: 21px;
+  font-size: 25px;
+}
+
+.script-list-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.script-list-footer-disclaimer {
+  margin-left: auto;
+}
+
+.script-list-footer-disclaimer.large {
+  font-size: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.script-list-footer-disclaimer.small {
+  font-size: 7px;
+  margin-right: 7px;
+  margin-bottom: 3.5px;
+}
+
+
+.script-list-footer.large {
+  height: 65px;
+}
+
+.script-list-footer.small {
+  height: 45.5px;
+}
+
+.script-list-footer-text{
+  margin-top: auto;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  color: black;
+  text-align: center;
+}
+
+.script-list-footer-text.large {
+  font-size: 20px;
+}
+
+.script-list-footer-text.small {
+  font-size: 14px;
+}
+
+.script-list-type-box-townsfolk {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.script-list-type-box-non-townsfolk {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-top: 1px solid rgb(200,200,200);
+  z-index: 1;
+}
+
+.script-list-character-side-label {
+  text-align: center;
+  height: auto;
+  background-color: rgb(40,40,40);
+  color: white;
+  font-weight: 500;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.script-list-character-side-label-text {
+  transform: rotate(90deg);
+}
+
+.script-list-character-side-label.large {
+  width: 50px;
+  font-size: 17px;
+}
+
+.script-list-character-side-label.small {
+  width: 35px;
+  font-size: 12px;
+}
+
+.script-list-characters-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.script-list-characters-box.large {
+  margin-left: 9px;
+}
+
+.script-list-characters-box.small {
+  margin-left: 6px;
+}
+
+.script-list-character-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.script-list-character-box.large {
+  height: 96px;
+  width: 460px;
+}
+
+.script-list-character-box.small {
+  height: 67px;
+  width: 322px;
+}
+
+.script-list-character-box:hover {
+  background-color: rgb(210,210,210);
+}
+
+.script-list-character-image.large {
+  width: 71px;
+}
+
+.script-list-character-image.small {
+  width: 50px;
+}
+
+.script-list-character-image.large img {
+  height: 50px;
+  margin-left: 0px;
+}
+
+.script-list-character-image.small img {
+  height: 35px;
+  margin-left: 0px;
+}
+
+.script-list-character-name-blue {
+  color: blue;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.script-list-character-name-blue.large {
+  font-size: 18px;
+}
+
+.script-list-character-name-blue.small {
+  font-size: 13px;
+}
+
+.script-list-character-name-red {
+  color: red;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.script-list-character-name-red.large {
+  font-size: 18px;
+}
+
+.script-list-character-name-red.small {
+  font-size: 13px;
+}
+
+.script-list-character-desc {
+  color: black;
+}
+
+.script-list-character-desc.large {
+  font-size: 13px;
+  height: 18px;
+  width: 380px;
+}
+
+.script-list-character-desc.small {
+  font-size: 9px;
+  height: 13px;
+  width: 266px;
+}
+
+.script-list-character-text-box.large {
+  margin-left: 5px;
+  margin-top: -3px;
+}
+
+.script-list-character-text-box.small {
+  margin-left: 4px;
+  margin-top: -2px;
+}

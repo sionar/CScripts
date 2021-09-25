@@ -1,0 +1,132 @@
+.script-night-box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.script-night {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: 'system-ui';
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  page-break-before: always;
+}
+
+.script-night.large {
+  width: 988px;
+  min-height: 1397px;
+}
+
+.script-night.small {
+  width: 692px;
+  min-height: 895px;
+  margin-top: 14px;
+  margin-bottom: 35px;
+}
+
+.script-night-header {
+  width: 100%;
+  background-color: rgb(40,40,40);
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.script-night-header.large {
+  height: 50px;
+  font-size: 28px;
+  padding: 2px 30px;
+}
+
+.script-night-header.small {
+  height: 35px;
+  font-size: 19px;
+  padding: 2px 21px;
+}
+
+.script-night-content-box.large {
+  padding: 30px 50px;
+}
+
+.script-night-content-box.small {
+  padding: 21px 35px;
+}
+
+.script-night-image-box.large {
+  height: 25px;
+}
+
+.script-night-image-box.small {
+  height: 17.5px;
+}
+
+.script-night-image.large {
+  height: 25px;
+  width: 36px;
+}
+
+.script-night-image.small {
+  height: 17.5px;
+  width: 25.5px;
+}
+
+.script-night-character-box {
+  color: black;
+  border-bottom: 1px solid rgb(200,200,200);
+}
+
+.script-night-label-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.script-night-label {
+  font-weight: 500;
+}
+
+.script-night-label.large {
+  width: 135px;
+  padding: 5px 0px 5px 5px;
+  font-size: 16px;
+}
+
+.script-night-label.small {
+  width: 94.5px;
+  padding: 3.5px 0px 3.5px 3.5px;
+  font-size: 11px;
+}
+
+.script-night-character-desc {
+  text-align: justify;
+}
+
+.script-night-character-desc.large {
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 785px;
+  font-size: 16px;
+}
+
+.script-night-character-desc.small {
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 3.5px;
+  width: 550px;
+  font-size: 11px;
+}
+
+#script-night-other.large {
+  margin-top: 30px;
+}

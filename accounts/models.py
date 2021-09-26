@@ -102,7 +102,7 @@ def password_reset_token_created(sender, instance, reset_password_token, *args, 
 	sender_name = 'Clocktower Scripts'
 
 	# recipient
-	recipient_email = [reset_password_token.user.email] # change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
+	recipient_email = reset_password_token.user.email # change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
 	recipient_name = ''
 
 	# subject

@@ -8,6 +8,13 @@ from django.core.validators import RegexValidator
 from django.core.mail import EmailMessage
 from rest_framework.authtoken.models import Token
 from django_rest_passwordreset.signals import reset_password_token_created
+import os
+from urllib.parse import urlparse
+from urllib.parse import unquote
+import smtplib
+import email.utils
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 class AccountManager(BaseUserManager):
 	def create_user(self, email, username, password=None):
@@ -71,15 +78,71 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
 @receiver(reset_password_token_created)
 def password_reset_token_created(sender, instance, reset_password_token, *args, **kwargs):
 	email_plaintext_message = '<div>Hello, you received this email because you requested a password reset from Clocktower Scripts.</div><div>To reset your password, enter in the provided token on the website along with your new password.</div><div>The token is:</div><div><b>{}</b></div><br><br><div>If you did not request to reset your password, you can ignore this email.</div>'.format(reset_password_token.key)
-	msg = EmailMessage(
-			# title:
-			'Password Reset for Clocktower Scripts',
-			# message:
-			email_plaintext_message,
-			# from:
-			'noreply@clocktowerscripts.com',
-			# to:
-			[reset_password_token.user.email]
-	)
-	msg.content_subtype = 'html'
-	msg.send()
+	# msg = EmailMessage(
+	# 		# title:
+	# 		'Password Reset for Clocktower Scripts',
+	# 		# message:
+	# 		email_plaintext_message,
+	# 		# from:
+	# 		'noreply@clocktowerscripts.com',
+	# 		# to:
+	# 		[reset_password_token.user.email]
+	# )
+	# msg.content_subtype = 'html'
+	# msg.send()
+	# read and parse MailerToGo env vars
+	mailertogo = urlparse(os.environ.get('MAILERTOGO_URL'))
+	mailertogo_domain = os.environ.get('MAILERTOGO_DOMAIN', "clocktowerscripts.com")
+	mailertogo_username = unquote(os.environ.get('EMAIL_HOST_USER'))
+	mailertogo_password = unquote(os.environ.get('EMAIL_HOST_PASSWORD'))
+
+	# sender
+	sender_user = 'noreply'
+	sender_email = "@".join([sender_user, mailertogo_domain])
+	sender_name = 'Clocktower Scripts'
+
+	# recipient
+	recipient_email = [reset_password_token.user.email] # change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
+	recipient_name = ''
+
+	# subject
+	subject = 'Password Reset for Clocktower Scripts'
+
+	# text body
+	body_plain = ('<div>Hello, you received this email because you requested a password reset from Clocktower Scripts.</div><div>To reset your password, enter in the provided token on the website along with your new password.</div><div>The token is:</div><div><b>{}</b></div><br><br><div>If you did not request to reset your password, you can ignore this email.</div>'.format(reset_password_token.key)	)
+
+	# html body
+	line_break = '\n' #used to replace line breaks with html breaks
+	body_html = f'''<html>
+			<head></head>
+			<body>
+			{body_plain}
+			</body>
+			</html>'''
+
+	# create message container
+	message = MIMEMultipart('alternative')
+	message['Subject'] = subject
+	message['From'] = email.utils.formataddr((sender_name, sender_email))
+	message['To'] = email.utils.formataddr((recipient_name, recipient_email))
+
+	# prepare plain and html message parts
+	part1 = MIMEText(body_plain, 'plain')
+	part2 = MIMEText(body_html, 'html')
+
+	# attach parts to message
+
+	message.attach(part1)
+	message.attach(part2)
+
+	# send the message.
+	try:
+			server = smtplib.SMTP('email-smtp.us-east-1.amazonaws.com', os.environ.get('EMAIL_PORT'))
+			server.ehlo()
+			server.starttls()
+			server.ehlo()
+			server.login(mailertogo_username, mailertogo_password)
+			server.sendmail(sender_email, recipient_email, message.as_string())
+			server.close()
+	except Exception as e:
+			print ("Error: ", e)

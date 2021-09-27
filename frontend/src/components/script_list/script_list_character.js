@@ -31,8 +31,8 @@ class ScriptListCharacter extends React.Component {
         </div>
         <div className={`script-list-character-text-box ${size}`}>
           <div className={characterClass}>{character.name}</div>
-          <div className={`script-list-character-desc ${size}`}>{character.desc1}</div>
-          <div className={`script-list-character-desc ${size}`}>{character.desc2}</div>
+          <div className={`script-list-character-desc ${size}`}>{`${character.desc1} `}</div>
+          <div className={`script-list-character-desc ${size}`}>{`${character.desc2} `}</div>
           <div className={`script-list-character-desc ${size}`}>{character.desc3}</div>
         </div>
       </div>

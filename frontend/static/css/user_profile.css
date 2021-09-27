@@ -19,6 +19,9 @@
   padding: 2vh 2vw;
   background-color: rgb(30,30,30);
   height: 10vh;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -66,3 +69,17 @@
   background-color: rgb(40,40,40);
 }
 
+
+@media only screen and (max-width: 697px) {
+  #user-profile-username {
+    font-size: 2em;
+  }
+
+  #user-profile-script-box-title {
+    font-size: 1em;
+  }
+
+  #user-profile-username-box {
+    min-height: 40px;
+  }
+}

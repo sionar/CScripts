@@ -304,4 +304,8 @@
     font-size: 8px !important;
     width: 80% !important;
   }
+
+  .script-list-character-desc {
+    display: inline !important;
+  }
 }

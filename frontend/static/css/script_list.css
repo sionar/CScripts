@@ -257,7 +257,7 @@
 
 .script-list-character-desc {
   color: black;
-  display: inline-block;
+  display: block;
 }
 
 .script-list-character-desc.large {

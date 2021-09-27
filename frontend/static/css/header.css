@@ -148,6 +148,7 @@
 #header-auth-box-logged-in {
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,4 +192,20 @@
 .header-auth-dropdown-button:focus {
   color: red;
   display: none;
+}
+
+
+@media only screen and (max-width: 697px) {
+  #header-box-center {
+    display: none;
+  }
+  #header-title {
+    font-size: 24px !important;
+  };
+}
+
+@media only screen and (max-width: 500px) {
+  #header-title {
+    font-size: 16px !important;
+  }
 }

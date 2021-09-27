@@ -257,6 +257,7 @@
 
 .script-list-character-desc {
   color: black;
+  display: inline-block;
 }
 
 .script-list-character-desc.large {
@@ -279,4 +280,12 @@
 .script-list-character-text-box.small {
   margin-left: 4px;
   margin-top: -2px;
+}
+
+@media only screen and (max-width: 697px) {
+  .script-list-title.large {
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+  }
 }

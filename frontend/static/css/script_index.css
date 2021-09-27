@@ -149,6 +149,7 @@
 #script-index-searchbar-form {
   height: 5vh;
   width: 50vw;
+  min-height: 30px;
   background-color: rgb(25,25,25);
   border-radius: 7px;
   display: flex;
@@ -161,6 +162,7 @@
 #script-index-searchbar-input {
   height: 4vh;
   width: 33vw;
+  min-height: 30px;
   background-color: rgb(40,40,40);
   border: 1px solid rgb(40,40,40);
   padding: 0vh 1vw;
@@ -173,6 +175,8 @@
 #script-index-searchbar-select {
   height: 4vh;
   width: 8vw;
+  min-height: 30px;
+  min-width: 100px;
   background-color: rgb(40,40,40);
   border: 1px solid rgb(40,40,40);
   padding: 0vh 0.5vw;
@@ -184,6 +188,8 @@
 #script-index-searchbar-submit {
   height: 4vh;
   width: 6vw;
+  min-height: 30px;
+  min-width: 100px;
   border: 1px solid rgb(40,40,40);
   padding: 0vh 0.5vw;
   box-sizing: border-box;
@@ -198,4 +204,40 @@
 
 #script-index-searchbar-form *:focus {
   outline: none;
+}
+
+
+@media only screen and (max-width: 770px) {
+  .script-index-table-expand-button {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 697px) {
+  #script-index-table-header {
+    font-size: 1.2em;
+
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+  #script-index-table-header {
+    font-size: 0.8em;
+    padding: 0.8vh 0vw;
+  }
+
+  .script-index-table-title a {
+    font-size: 0.8em;
+  }
+
+  .script-index-table-author {
+    font-size: 0.6em;
+  }
+
+  .script-index-table-type {
+    font-size: 0.6em;
+  }
+
 }

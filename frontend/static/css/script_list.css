@@ -227,32 +227,33 @@
   margin-left: 0px;
 }
 
-.script-list-character-name-blue {
+.script-list-character-name.blue {
   color: blue;
-  font-weight: 600;
-  margin-bottom: 2px;
 }
 
-.script-list-character-name-blue.large {
-  font-size: 18px;
-}
-
-.script-list-character-name-blue.small {
-  font-size: 13px;
-}
-
-.script-list-character-name-red {
+.script-list-character-name.red {
   color: red;
-  font-weight: 600;
-  margin-bottom: 2px;
 }
 
-.script-list-character-name-red.large {
+.script-list-character-name.yellow {
+  color: #cece67;
+}
+
+.script-list-character-name.green {
+  color: green;
+}
+
+.script-list-character-name.large {
   font-size: 18px;
 }
 
-.script-list-character-name-red.small {
+.script-list-character-name.small {
   font-size: 13px;
+}
+
+.script-list-character-name{
+  font-weight: 600;
+  margin-bottom: 2px;
 }
 
 .script-list-character-desc {

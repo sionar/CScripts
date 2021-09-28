@@ -19,10 +19,15 @@ class ScriptListCharacter extends React.Component {
     const size = this.props.size;
     const crossOrigin = this.props.ui.view.page == 'detail' && !this.props.ui.view.editing ? 'anonymous' : null;
     const detailCache = this.props.ui.view.page == 'detail' && !this.props.ui.view.editing ? '&detail' : '';
-    let characterClass = `script-list-character-name-blue ${size}`;
+    let color = 'blue';
     if (character.char_type == 'Minion' || character.char_type == 'Demon') {
-      characterClass = `script-list-character-name-red ${size}`;
+      color = 'red';
+    } else if (character.char_type == 'Fabled') {
+      color = 'yellow';
+    } else if (character.char_type == 'Traveller') {
+      color = 'green';
     };
+    const characterClass = `script-list-character-name ${color} ${size}`;
 
     return (
       <div className={`script-list-character-box ${size}`} onClick={this.handleClick}>

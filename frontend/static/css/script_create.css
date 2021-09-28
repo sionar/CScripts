@@ -243,3 +243,7 @@ input:checked + .slider:before {
 .script-create-info-button:hover {
   background-color: rgb(80,80,80);
 }
+
+#script-create-nav-box {
+  min-width: 140px;
+}

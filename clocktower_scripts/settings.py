@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '.herokuapp.com', 'www.clo
 INSTALLED_APPS = [
     'accounts',
     'char_scripts',
+    'script_collections',
     'frontend.apps.FrontendConfig',
 
     'rest_framework',

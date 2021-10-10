@@ -23,6 +23,7 @@ urlpatterns = [
     path('api/char_scripts/', include('char_scripts.api.urls', 'char_scripts_api')),
     path('api/account/', include('accounts.api.urls', 'accounts_api')),
     path('api/password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),
+    path('api/collections/', include('script_collections.api.urls', 'script_collections_api')),
     path('admin/', admin.site.urls),
     path('', include('frontend.urls'))
 ]

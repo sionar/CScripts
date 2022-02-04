@@ -6,13 +6,13 @@ class ScriptIndex extends React.Component {
   constructor(props) {
     super(props);
     this.props.setUiViewPage('index');
-    this.props.getScripts('');
+    if (this.props.ui.loading.index)
+      this.props.getScripts('');
   };
 
   componentDidMount() {
     const table = document.getElementById('script-index-table');
     table.addEventListener('scroll', this.handleScroll.bind(this));
-    console.log('done');
   }
 
   handleScroll(e) {

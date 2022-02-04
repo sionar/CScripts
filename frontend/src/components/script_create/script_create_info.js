@@ -85,7 +85,7 @@ class ScriptCreateInfo extends React.Component {
             <input id='script-create-info-author-input' type='text' name='author' placeholder='anonymous author' autocomplete='off' value={this.props.ui.create.script.author} onChange={this.handleAuthor}></input>
           </div>
           {ownerDiv}
-          <textarea id='script-create-info-description' name='description' placeholder='Script description.' maxLength='1000' value={this.props.ui.create.script.description} onChange={this.handleDescription}></textarea>
+          <textarea id='script-create-info-description' name='description' placeholder='Script description.' maxLength='10000' value={this.props.ui.create.script.description} onChange={this.handleDescription}></textarea>
           <div id='script-create-info-script-type-box'>
             <div id='script-create-info-script-type-label'>Script Type:</div>
             <select id='script-create-info-script-type-select' value={scriptSizeLabel[this.props.ui.create.script.script_type]} onChange={this.handleScriptType}>

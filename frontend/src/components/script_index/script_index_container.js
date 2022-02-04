@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getScripts } from '../../actions/script_actions';
+import { getScripts, getPage } from '../../actions/script_actions';
 import { setUiLoadingIndexStatus, setUiViewPage } from '../../actions/ui_actions';
 import ScriptIndex from './script_index';
 
@@ -10,6 +10,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   getScripts: (params) => dispatch(getScripts(params)),
+  getPage: (page) => dispatch(getPage(page)),
   setUiLoadingIndexStatus: status => dispatch(setUiLoadingIndexStatus(status)),
   setUiViewPage: page => dispatch(setUiViewPage(page)),
 });

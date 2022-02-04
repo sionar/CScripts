@@ -6,7 +6,7 @@ export default (state = {}, action) => {
   let nextState = Object.assign({}, state);
   switch (action.type) {
     case RECEIVE_SCRIPTS:
-      action.data.forEach(script => 
+      action.data.results.forEach(script => 
         script.versions.forEach(version =>
           version.characters.forEach(character =>
             nextState[character.id] = character

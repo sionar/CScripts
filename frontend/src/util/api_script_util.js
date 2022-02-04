@@ -5,6 +5,14 @@ export const getScriptIndex = (params) => (
   })
 );
 
+export const getPage = (page) => (
+  $.ajax({
+    url: page,
+    method: 'GET'
+  })
+);
+
+
 export const getScript = (id, token) => {
   const authToken = token == null ? null : 'Token ' + token;
   return (

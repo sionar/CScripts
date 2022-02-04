@@ -9,6 +9,21 @@ class ScriptIndex extends React.Component {
     this.props.getScripts('');
   };
 
+  componentDidMount() {
+    const table = document.getElementById('script-index-table');
+    table.addEventListener('scroll', this.handleScroll.bind(this));
+    console.log('done');
+  }
+
+  handleScroll(e) {
+    const table = document.getElementById('script-index-table');
+    if (table.scrollTop + table.offsetHeight >= table.scrollHeight ) {
+      if (this.props.ui.index.next != null) {
+        this.props.getPage(this.props.ui.index.next);
+      }
+    }
+  }
+
   render() {
     const users = this.props.entities.users;
     const scripts = this.props.entities.scripts;

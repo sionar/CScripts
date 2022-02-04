@@ -7,7 +7,7 @@ export default (state = {}, action) => {
   let entry, version;
   switch (action.type) {
     case RECEIVE_SCRIPTS:
-      action.data.forEach(script => 
+      action.data.results.forEach(script => 
         script.versions.forEach(version => {
           entry = Object.assign({}, version);
           entry.script_id = script.id;

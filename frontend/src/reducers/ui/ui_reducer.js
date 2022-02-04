@@ -20,7 +20,7 @@ const uiReducer = combineReducers({
   login: loginReducer,
   register: registerReducer,
   recover: recoverReducer,
-  profile: profileReducer
+  profile: profileReducer,
 });
 
 export default uiReducer;

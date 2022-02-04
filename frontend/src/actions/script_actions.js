@@ -48,7 +48,14 @@ export const deleteScriptAction = (scriptId) => ({
 
 export const getScripts = (params) => (dispatch) => ScriptUtil.getScriptIndex(params)
   .then(res => {
-    dispatch(receiveScripts(res.results));
+    dispatch(receiveScripts(res));
+    dispatch(setUiLoadingIndexStatus(false));
+  })
+  .fail(res => dispatch(receiveScriptErrors(res.responseJSON)));
+
+export const getPage = (page) => (dispatch) => ScriptUtil.getPage(page)
+  .then(res => {
+    dispatch(receiveScripts(res));
     dispatch(setUiLoadingIndexStatus(false));
   })
   .fail(res => dispatch(receiveScriptErrors(res.responseJSON)));

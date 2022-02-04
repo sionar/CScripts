@@ -7,7 +7,7 @@ export default (state = {}, action) => {
   let entry;
   switch (action.type) {
     case RECEIVE_SCRIPTS:
-      action.data.forEach(script => {
+      action.data.results.forEach(script => {
         entry = Object.assign({}, script.owner);
         nextState[entry.username] = entry;
         });

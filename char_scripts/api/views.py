@@ -16,6 +16,16 @@ class ScriptListView(generics.ListAPIView):
         type = self.request.query_params.get('type')
         if type is not None:
             queryset = queryset.filter(script_type=type)
+        for i in range(8):
+            char = self.request.query_params.get('inc' + str(i))
+            if len(queryset) != 0 and char is not None:
+                queryset = queryset.filter(versions__characters__name=char).distinct()
+        for i in range(8):
+            char = self.request.query_params.get('exc' + str(i))
+            if len(queryset) != 0 and char is not None:
+                queryset = queryset.exclude(versions__characters__name=char).distinct()
+                
+
         queryset = self.get_serializer_class().setup_eager_loading(queryset)
         return queryset
 

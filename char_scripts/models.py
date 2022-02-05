@@ -15,7 +15,7 @@ class Script(models.Model):
         ordering = ['-created_at']
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 
 class Version(models.Model):

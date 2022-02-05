@@ -1,4 +1,4 @@
-import { RECEIVE_SCRIPTS, RECEIVE_SCRIPT, RECEIVE_USER_SCRIPTS } from '../../actions/script_actions';
+import { RECEIVE_SCRIPTS, RECEIVE_PAGE, RECEIVE_SCRIPT, RECEIVE_USER_SCRIPTS } from '../../actions/script_actions';
 import { ADD_AUTH_USER, RECEIVE_AUTH } from '../../actions/auth_actions';
 
 export default (state = {}, action) => {
@@ -7,6 +7,12 @@ export default (state = {}, action) => {
   let entry;
   switch (action.type) {
     case RECEIVE_SCRIPTS:
+      action.data.results.forEach(script => {
+        entry = Object.assign({}, script.owner);
+        nextState[entry.username] = entry;
+        });
+      return nextState;
+    case RECEIVE_PAGE:
       action.data.results.forEach(script => {
         entry = Object.assign({}, script.owner);
         nextState[entry.username] = entry;

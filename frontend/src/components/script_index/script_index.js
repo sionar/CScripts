@@ -28,7 +28,6 @@ class ScriptIndex extends React.Component {
     const users = this.props.entities.users;
     const scripts = this.props.entities.scripts;
     let scriptsArr = this.props.ui.index.scripts.map(scriptId => this.props.entities.scripts[scriptId]);
-    console.log(scriptsArr)
     scriptsArr = scriptsArr.filter(script => {
       return script.owner != null && users[script.owner].is_guest == false;
     });

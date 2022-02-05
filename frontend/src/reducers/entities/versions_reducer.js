@@ -1,4 +1,4 @@
-import { RECEIVE_SCRIPTS, RECEIEVE_PAGE, RECEIVE_SCRIPT, RECEIVE_USER_SCRIPTS } from '../../actions/script_actions';
+import { RECEIVE_SCRIPTS, RECEIVE_PAGE, RECEIVE_SCRIPT, RECEIVE_USER_SCRIPTS } from '../../actions/script_actions';
 import { ADD_CREATE_VERSION, UPDATE_VERSION } from '../../actions/script_create_actions';
 
 export default (state = {}, action) => {

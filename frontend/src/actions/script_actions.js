@@ -10,6 +10,7 @@ import { setDeleteScriptStatus } from './script_create_actions';
 import { setModalActive } from './modal_actions';
 
 export const RECEIVE_SCRIPTS = 'RECEIVE_SCRIPTS';
+export const RECEIVE_PAGE = 'RECEIVE_PAGE';
 export const RECEIVE_SCRIPTS_ERRORS = 'RECEIVE_SCRIPT_ERRORS';
 export const RECEIVE_SCRIPT = 'RECEIVE_SCRIPT';
 export const RECEIVE_USER_SCRIPTS = 'RECEIVE_USER_SCRIPTS';
@@ -18,6 +19,11 @@ export const DELETE_SCRIPT = 'DELETE_SCRIPT';
 
 export const receiveScripts = (data) => ({
   type: RECEIVE_SCRIPTS,
+  data
+});
+
+export const receivePage = (data) => ({
+  type: RECEIVE_PAGE,
   data
 });
 
@@ -55,7 +61,7 @@ export const getScripts = (params) => (dispatch) => ScriptUtil.getScriptIndex(pa
 
 export const getPage = (page) => (dispatch) => ScriptUtil.getPage(page)
   .then(res => {
-    dispatch(receiveScripts(res));
+    dispatch(receivePage(res));
     dispatch(setUiLoadingIndexStatus(false));
   })
   .fail(res => dispatch(receiveScriptErrors(res.responseJSON)));

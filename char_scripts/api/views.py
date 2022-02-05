@@ -103,3 +103,4 @@ class AccountDetailView(generics.RetrieveAPIView):
         else:
             queryset = Account.objects.prefetch_related(Prefetch('scripts', queryset=Script.objects.filter(visible=True), to_attr='filtered_scripts'))
         return queryset
+        

@@ -1,4 +1,4 @@
-import { RECEIVE_SCRIPTS, RECEIVE_SCRIPT, RECEIVE_USER_SCRIPTS } from '../../actions/script_actions';
+import { RECEIVE_SCRIPTS, RECEIVE_PAGE, RECEIVE_SCRIPT, RECEIVE_USER_SCRIPTS } from '../../actions/script_actions';
 import { ADD_CREATE_SCRIPT } from '../../actions/script_create_actions';
 
 export default (state = {}, action) => {
@@ -6,6 +6,22 @@ export default (state = {}, action) => {
   let nextState = Object.assign({}, state);
   let entry;
   switch (action.type) {
+    case RECEIVE_SCRIPTS:
+      action.data.results.forEach(script => {
+        entry = Object.assign({}, script)
+        entry.owner = entry.owner.username;
+        delete entry.versions;
+        nextState[entry.id] = entry;
+        });
+      return nextState;
+    case RECEIVE_PAGE:
+      action.data.results.forEach(script => {
+        entry = Object.assign({}, script)
+        entry.owner = entry.owner.username;
+        delete entry.versions;
+        nextState[entry.id] = entry;
+        });
+      return nextState;
     case RECEIVE_SCRIPTS:
       action.data.results.forEach(script => {
         entry = Object.assign({}, script)
